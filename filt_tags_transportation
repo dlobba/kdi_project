@@ -24,9 +24,8 @@ railway=platform
 railway=station
 railway=tram_stop
 
-route=bus
-route=ferry
-route=railway
-route=train
-route=tram
-
+# route=bus
+# route=ferry
+# route=railway
+# route=train
+# route=tram
