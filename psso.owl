@@ -13,28 +13,19 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#OWLClass_0871b77d_262e_4632_b546_bdbb8858e98f"/>
+        <Class IRI="#Country"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OWLClass_08a69a9a_4452_4760_9399_b6b117ffe529"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OWLClass_1664267d_0d74_434a_ab1e_f6402a24bdfb"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#OWLClass_1833fc84_e3ba_4b22_9692_71dc1defa5ce"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_248fab47_eb1a_418e_b733_d488331cb82e"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OWLClass_3d43b6bf_df69_4021_bdda_2f627507219d"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_532c3f01_67ba_41e7_ae37_bb0dc835a9ff"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OWLClass_54b067df_46e9_45eb_89bb_4d61c0cac872"/>
@@ -49,28 +40,13 @@
         <Class IRI="#OWLClass_5a2e64bb_f571_4a0d_b17d_6c537b05de0a"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OWLClass_5f0e6444_24f3_44f7_932e_f045b6b895f2"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OWLClass_677d9250_f9f4_4839_8471_c16794d23441"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OWLClass_6b5dbef8_c823_4eea_b75e_a2e806c88e71"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_6bb50951_5348_4976_894e_d28fb9317d89"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_833a11d5_11cf_49dd_89b3_8d806e74aa4d"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_859edcd9_3ec6_418c_8e62_8ece3082387a"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OWLClass_89f36ee1_b968_4d9e_8bee_40ad390a7fae"/>
@@ -79,25 +55,13 @@
         <Class IRI="#OWLClass_8e8b2d7c_df5f_4c9c_9b85_2ae1359becef"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OWLClass_91e35f7b_9903_48fa_a7ba_7d38593874c3"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#OWLClass_9cb6ba99_7423_42c2_af7b_e400bbc7876a"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OWLClass_ab15fc9b_2141_40d3_8997_04b77d31b9d4"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OWLClass_ab95e488_5f3b_468a_9c99_49eec4877ad7"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#OWLClass_af2e5396_6918_4427_bc61_40e2b169d6ad"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_b2adad00_3d65_44c7_a0f2_48a1e06a6c3a"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_b3435357_38fe_452b_abef_672f61fb8031"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OWLClass_b7d0df7f_c746_47ce_b37e_3894ae383128"/>
@@ -109,61 +73,37 @@
         <Class IRI="#OWLClass_b93614f7_713d_447e_91db_95b7b4639ef0"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#OWLClass_c24e2132_2d37_49cf_a0d4_2d8a5052c19d"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_de317023_3a44_4181_b55b_0dccecaf7571"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_e35af0c2_3277_4fea_8ba1_9f4594a20319"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_e4d006e4_ef62_4f22_b24f_50b466c75302"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_e899d439_6db0_464c_b5e6_52684d093238"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_e92f2c0b_2486_433d_a003_7c3a1ccb56d2"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#OWLClass_f033092b_76bb_46da_ad4a_3bd28c6bdca8"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_f5f954b1_6414_4225_bb31_cf1c18613c66"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OWLClass_f964803a_cc7f_469e_b2af_4e6f8d3905af"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OWLClass_fcfea33d_327a_4577_92b4_3d21fefa2c79"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_04686314_6ffe_49cc_bd81_d665987baac2"/>
+        <Class IRI="#Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#AdministrativeDivisionProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#CompetenceUnder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Connected"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsCompetentOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ManagementAuthorityProperty"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#OWLObjectProperty_05b673ba_6b7e_4096_a61d_40f1074f57c5"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_0ed7082b_ce6d_4650_b277_4a78143b6e55"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_0f5ff21f_044d_46bf_8db5_49514e8ea8eb"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_14b26993_0d81_45d0_987f_e5a414ab0dca"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_1588b0c7_ed7d_4630_a2cd_58c9989ff85d"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_1be4988e_c0b9_4291_aa85_0332d2167909"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#OWLObjectProperty_25109f36_3319_4ce9_a458_8fe6c05f668a"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_3a3100ba_c0ea_4caf_bff3_9f8ac4f8c700"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#OWLObjectProperty_3d107760_fc29_47fc_90d6_23d0ffc295d9"/>
@@ -172,73 +112,67 @@
         <ObjectProperty IRI="#OWLObjectProperty_43278d1c_5048_4441_b9f5_83b778580efe"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_43d65880_eebf_4555_91e7_edf1710ba673"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_45e33071_679e_4740_be62_5246dbfd1a58"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_4942d59f_b7db_4201_9239_4ac64a9f548b"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_510d11be_12b2_46ae_b5de_5c188251ef36"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_57fccc0d_8660_4d40_bc90_968dbdfe292b"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_60c1ca00_e563_4394_a20e_02aeb07e8ca1"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_627f7056_5d18_4b46_a9e6_f114cea57d6c"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_6ff81f71_0c1c_4074_ac62_35a881b38688"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_732f87a3_ef8c_43dc_b38c_e918f2d6817f"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_761bbb58_52a9_4aa0_9d0b_e0f905401f11"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_ab53b22b_4114_40a2_94bd_6cf531537535"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_abcaed28_117b_4190_9faa_c166a58cf4d8"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#OWLObjectProperty_ad7dd808_3e1e_43be_a750_9e31339d0c3f"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_b2303244_e150_4f49_96f0_06dabb30671a"/>
+        <ObjectProperty IRI="#RegionProperty"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_c06bc04f_b6b6_45f4_a9ea_f9efadc475ff"/>
+        <ObjectProperty IRI="#TransportationProperty"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_d355a286_4533_4e7c_ac9a_9a2ee74ef563"/>
+        <DataProperty IRI="#AbundanceCategory"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_db815392_7a8f_4b15_97ea_184ede4d2dc6"/>
+        <DataProperty IRI="#Address"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_e0d42ef5_560c_4781_8b9c_620d7377a7d8"/>
+        <DataProperty IRI="#AdministrativeDivisionCode"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_e4f08de8_dc40_47e5_9f79_c65d418d7837"/>
+        <DataProperty IRI="#AreaCovered"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_e9449be8_30c1_48da_8f3c_46f7e5f520d0"/>
+        <DataProperty IRI="#DDLatitude"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_ec5b1047_2e82_42e0_8eea_35d10d9c3f62"/>
+        <DataProperty IRI="#DDLongitude"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_f2977743_70e4_4e97_ac62_9813fd3f9999"/>
+        <DataProperty IRI="#DMSLatitude"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#OWLObjectProperty_f657e5a0_b257_4d5c_9375_b8e3da470784"/>
+        <DataProperty IRI="#DMSLongitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Designation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Fax"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IdentificationValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LocalName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ManagementAuthorityValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MarineAreaCovered"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Natura2000PSID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Natura2000SiteCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Natura2000SpeciesID"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#OWLDataProperty_3eb7e0c8_1f0a_4ac1_b370_7c4fbe7d4590"/>
@@ -255,33 +189,62 @@
     <Declaration>
         <DataProperty IRI="#OWLDataProperty_cbdbc859_ed1b_4fac_9caf_c2d52a4f018f"/>
     </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PSType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ProtectedSiteValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SpeciesValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Status"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#StatusYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Supergroup"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Telephone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TransportationOwnership"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TransportationValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#WDPAID"/>
+    </Declaration>
     <SubClassOf>
-        <Class IRI="#OWLClass_0871b77d_262e_4632_b546_bdbb8858e98f"/>
-        <Class IRI="#OWLClass_859edcd9_3ec6_418c_8e62_8ece3082387a"/>
+        <Class IRI="#Country"/>
+        <Class IRI="#OWLClass_5a2e64bb_f571_4a0d_b17d_6c537b05de0a"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_08a69a9a_4452_4760_9399_b6b117ffe529"/>
         <Class IRI="#OWLClass_f033092b_76bb_46da_ad4a_3bd28c6bdca8"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#OWLClass_1664267d_0d74_434a_ab1e_f6402a24bdfb"/>
-        <Class IRI="#OWLClass_f5f954b1_6414_4225_bb31_cf1c18613c66"/>
+        <Class IRI="#OWLClass_08a69a9a_4452_4760_9399_b6b117ffe529"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#SpeciesValue"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_1833fc84_e3ba_4b22_9692_71dc1defa5ce"/>
         <Class IRI="#OWLClass_b93614f7_713d_447e_91db_95b7b4639ef0"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#OWLClass_248fab47_eb1a_418e_b733_d488331cb82e"/>
-        <Class IRI="#OWLClass_de317023_3a44_4181_b55b_0dccecaf7571"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#OWLClass_3d43b6bf_df69_4021_bdda_2f627507219d"/>
-        <Class IRI="#OWLClass_91e35f7b_9903_48fa_a7ba_7d38593874c3"/>
+        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
-        <Class IRI="#OWLClass_f033092b_76bb_46da_ad4a_3bd28c6bdca8"/>
+        <Class IRI="#SocialEntity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
@@ -293,61 +256,184 @@
     <SubClassOf>
         <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#OWLDataProperty_623e9d42_4f57_480c_aef0_12905a302e3c"/>
-            <Datatype abbreviatedIRI="rdfs:Literal"/>
+            <DataProperty IRI="#Natura2000SiteCode"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#OWLClass_532c3f01_67ba_41e7_ae37_bb0dc835a9ff"/>
-        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#OWLDataProperty_41f30c3b_ccf1_4955_9e01_70f362a67e51"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_54b067df_46e9_45eb_89bb_4d61c0cac872"/>
-        <Class IRI="#OWLClass_91e35f7b_9903_48fa_a7ba_7d38593874c3"/>
+        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_571b5ca4_293b_4069_84e9_b16974fc3832"/>
-        <Class IRI="#OWLClass_91e35f7b_9903_48fa_a7ba_7d38593874c3"/>
+        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_5758be1c_a24e_4c6a_9a8e_b1db3ef42a05"/>
-        <Class IRI="#OWLClass_ab95e488_5f3b_468a_9c99_49eec4877ad7"/>
+        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_5a2e64bb_f571_4a0d_b17d_6c537b05de0a"/>
         <Class IRI="#OWLClass_677d9250_f9f4_4839_8471_c16794d23441"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#OWLClass_5f0e6444_24f3_44f7_932e_f045b6b895f2"/>
-        <Class IRI="#OWLClass_859edcd9_3ec6_418c_8e62_8ece3082387a"/>
+        <Class IRI="#OWLClass_5a2e64bb_f571_4a0d_b17d_6c537b05de0a"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#AdministrativeDivisionCode"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
         <Class IRI="#OWLClass_677d9250_f9f4_4839_8471_c16794d23441"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Connected"/>
+            <Class IRI="#OWLClass_677d9250_f9f4_4839_8471_c16794d23441"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#OWLDataProperty_a6e17a3f_b4d8_4b3e_a032_593cb6253112"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#OWLDataProperty_cbdbc859_ed1b_4fac_9caf_c2d52a4f018f"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#TransportationOwnership"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#OWLClass_677d9250_f9f4_4839_8471_c16794d23441"/>
         <Class IRI="#OWLClass_f033092b_76bb_46da_ad4a_3bd28c6bdca8"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_6b5dbef8_c823_4eea_b75e_a2e806c88e71"/>
-        <Class IRI="#OWLClass_859edcd9_3ec6_418c_8e62_8ece3082387a"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_6bb50951_5348_4976_894e_d28fb9317d89"/>
-        <Class IRI="#OWLClass_248fab47_eb1a_418e_b733_d488331cb82e"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
         <Class IRI="#OWLClass_677d9250_f9f4_4839_8471_c16794d23441"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#OWLClass_833a11d5_11cf_49dd_89b3_8d806e74aa4d"/>
-        <Class IRI="#OWLClass_f5f954b1_6414_4225_bb31_cf1c18613c66"/>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#CompetenceUnder"/>
+            <Class IRI="#OWLClass_8e8b2d7c_df5f_4c9c_9b85_2ae1359becef"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#OWLClass_859edcd9_3ec6_418c_8e62_8ece3082387a"/>
-        <Class IRI="#OWLClass_de317023_3a44_4181_b55b_0dccecaf7571"/>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#OWLObjectProperty_25109f36_3319_4ce9_a458_8fe6c05f668a"/>
+            <Class IRI="#OWLClass_08a69a9a_4452_4760_9399_b6b117ffe529"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#OWLObjectProperty_3d107760_fc29_47fc_90d6_23d0ffc295d9"/>
+            <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#OWLObjectProperty_43278d1c_5048_4441_b9f5_83b778580efe"/>
+            <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#AreaCovered"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Designation"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#LocalName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#MarineAreaCovered"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Natura2000PSID"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#OWLDataProperty_a6e17a3f_b4d8_4b3e_a032_593cb6253112"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#OWLDataProperty_cbdbc859_ed1b_4fac_9caf_c2d52a4f018f"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#PSType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Status"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#StatusYear"/>
+            <Datatype abbreviatedIRI="xsd:short"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#WDPAID"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_89f36ee1_b968_4d9e_8bee_40ad390a7fae"/>
@@ -358,8 +444,11 @@
         <Class IRI="#OWLClass_5a2e64bb_f571_4a0d_b17d_6c537b05de0a"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#OWLClass_91e35f7b_9903_48fa_a7ba_7d38593874c3"/>
-        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
+        <Class IRI="#OWLClass_8e8b2d7c_df5f_4c9c_9b85_2ae1359becef"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsCompetentOn"/>
+            <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_9cb6ba99_7423_42c2_af7b_e400bbc7876a"/>
@@ -367,10 +456,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_ab15fc9b_2141_40d3_8997_04b77d31b9d4"/>
-        <Class IRI="#OWLClass_91e35f7b_9903_48fa_a7ba_7d38593874c3"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_ab95e488_5f3b_468a_9c99_49eec4877ad7"/>
         <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
     </SubClassOf>
     <SubClassOf>
@@ -378,95 +463,53 @@
         <Class IRI="#OWLClass_5758be1c_a24e_4c6a_9a8e_b1db3ef42a05"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#OWLClass_b2adad00_3d65_44c7_a0f2_48a1e06a6c3a"/>
-        <Class IRI="#OWLClass_f5f954b1_6414_4225_bb31_cf1c18613c66"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_b3435357_38fe_452b_abef_672f61fb8031"/>
-        <Class IRI="#OWLClass_e4d006e4_ef62_4f22_b24f_50b466c75302"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#OWLClass_b7d0df7f_c746_47ce_b37e_3894ae383128"/>
         <Class IRI="#OWLClass_5758be1c_a24e_4c6a_9a8e_b1db3ef42a05"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_b8b641ca_3015_49a0_b8ef_2793fdd06d20"/>
-        <Class IRI="#OWLClass_91e35f7b_9903_48fa_a7ba_7d38593874c3"/>
+        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_b93614f7_713d_447e_91db_95b7b4639ef0"/>
-        <Class IRI="#OWLClass_ab95e488_5f3b_468a_9c99_49eec4877ad7"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_c24e2132_2d37_49cf_a0d4_2d8a5052c19d"/>
-        <Class IRI="#OWLClass_ab95e488_5f3b_468a_9c99_49eec4877ad7"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_e35af0c2_3277_4fea_8ba1_9f4594a20319"/>
-        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_e4d006e4_ef62_4f22_b24f_50b466c75302"/>
-        <Class IRI="#OWLClass_f964803a_cc7f_469e_b2af_4e6f8d3905af"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_e899d439_6db0_464c_b5e6_52684d093238"/>
-        <Class IRI="#OWLClass_859edcd9_3ec6_418c_8e62_8ece3082387a"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_e92f2c0b_2486_433d_a003_7c3a1ccb56d2"/>
-        <Class IRI="#OWLClass_e4d006e4_ef62_4f22_b24f_50b466c75302"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_f5f954b1_6414_4225_bb31_cf1c18613c66"/>
-        <Class IRI="#OWLClass_248fab47_eb1a_418e_b733_d488331cb82e"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_f964803a_cc7f_469e_b2af_4e6f8d3905af"/>
-        <Class IRI="#OWLClass_de317023_3a44_4181_b55b_0dccecaf7571"/>
+        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_fcfea33d_327a_4577_92b4_3d21fefa2c79"/>
         <Class IRI="#OWLClass_b93614f7_713d_447e_91db_95b7b4639ef0"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Province"/>
+        <Class IRI="#OWLClass_5a2e64bb_f571_4a0d_b17d_6c537b05de0a"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#OWLClass_0871b77d_262e_4632_b546_bdbb8858e98f"/>
-        <Class IRI="#OWLClass_5f0e6444_24f3_44f7_932e_f045b6b895f2"/>
-        <Class IRI="#OWLClass_6b5dbef8_c823_4eea_b75e_a2e806c88e71"/>
-        <Class IRI="#OWLClass_e899d439_6db0_464c_b5e6_52684d093238"/>
+        <Class IRI="#Country"/>
+        <Class IRI="#OWLClass_89f36ee1_b968_4d9e_8bee_40ad390a7fae"/>
+        <Class IRI="#OWLClass_8e8b2d7c_df5f_4c9c_9b85_2ae1359becef"/>
+        <Class IRI="#Province"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#OWLClass_08a69a9a_4452_4760_9399_b6b117ffe529"/>
-        <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
         <Class IRI="#OWLClass_677d9250_f9f4_4839_8471_c16794d23441"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#OWLClass_1664267d_0d74_434a_ab1e_f6402a24bdfb"/>
-        <Class IRI="#OWLClass_833a11d5_11cf_49dd_89b3_8d806e74aa4d"/>
-        <Class IRI="#OWLClass_b2adad00_3d65_44c7_a0f2_48a1e06a6c3a"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#OWLClass_1833fc84_e3ba_4b22_9692_71dc1defa5ce"/>
         <Class IRI="#OWLClass_fcfea33d_327a_4577_92b4_3d21fefa2c79"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_248fab47_eb1a_418e_b733_d488331cb82e"/>
-        <Class IRI="#OWLClass_859edcd9_3ec6_418c_8e62_8ece3082387a"/>
-        <Class IRI="#OWLClass_f964803a_cc7f_469e_b2af_4e6f8d3905af"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#OWLClass_3d43b6bf_df69_4021_bdda_2f627507219d"/>
         <Class IRI="#OWLClass_54b067df_46e9_45eb_89bb_4d61c0cac872"/>
         <Class IRI="#OWLClass_571b5ca4_293b_4069_84e9_b16974fc3832"/>
+        <Class IRI="#OWLClass_5758be1c_a24e_4c6a_9a8e_b1db3ef42a05"/>
         <Class IRI="#OWLClass_ab15fc9b_2141_40d3_8997_04b77d31b9d4"/>
         <Class IRI="#OWLClass_b8b641ca_3015_49a0_b8ef_2793fdd06d20"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#OWLClass_532c3f01_67ba_41e7_ae37_bb0dc835a9ff"/>
-        <Class IRI="#OWLClass_e35af0c2_3277_4fea_8ba1_9f4594a20319"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#OWLClass_5758be1c_a24e_4c6a_9a8e_b1db3ef42a05"/>
         <Class IRI="#OWLClass_b93614f7_713d_447e_91db_95b7b4639ef0"/>
     </DisjointClasses>
     <DisjointClasses>
@@ -475,62 +518,41 @@
         <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_6bb50951_5348_4976_894e_d28fb9317d89"/>
-        <Class IRI="#OWLClass_f5f954b1_6414_4225_bb31_cf1c18613c66"/>
-        <Class IRI="#OWLClass_f964803a_cc7f_469e_b2af_4e6f8d3905af"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#OWLClass_89f36ee1_b968_4d9e_8bee_40ad390a7fae"/>
-        <Class IRI="#OWLClass_8e8b2d7c_df5f_4c9c_9b85_2ae1359becef"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#OWLClass_9cb6ba99_7423_42c2_af7b_e400bbc7876a"/>
         <Class IRI="#OWLClass_af2e5396_6918_4427_bc61_40e2b169d6ad"/>
         <Class IRI="#OWLClass_b7d0df7f_c746_47ce_b37e_3894ae383128"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#OWLClass_b3435357_38fe_452b_abef_672f61fb8031"/>
-        <Class IRI="#OWLClass_e92f2c0b_2486_433d_a003_7c3a1ccb56d2"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#OWLClass_de317023_3a44_4181_b55b_0dccecaf7571"/>
         <Class IRI="#OWLClass_f033092b_76bb_46da_ad4a_3bd28c6bdca8"/>
+        <Class IRI="#SocialEntity"/>
     </DisjointClasses>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_04686314_6ffe_49cc_bd81_d665987baac2"/>
-        <ObjectProperty IRI="#OWLObjectProperty_e9449be8_30c1_48da_8f3c_46f7e5f520d0"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_05b673ba_6b7e_4096_a61d_40f1074f57c5"/>
-        <ObjectProperty IRI="#OWLObjectProperty_ad7dd808_3e1e_43be_a750_9e31339d0c3f"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_0ed7082b_ce6d_4650_b277_4a78143b6e55"/>
-        <ObjectProperty IRI="#OWLObjectProperty_ad7dd808_3e1e_43be_a750_9e31339d0c3f"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_0f5ff21f_044d_46bf_8db5_49514e8ea8eb"/>
+        <ObjectProperty IRI="#AdministrativeDivisionProperty"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_14b26993_0d81_45d0_987f_e5a414ab0dca"/>
-        <ObjectProperty IRI="#OWLObjectProperty_761bbb58_52a9_4aa0_9d0b_e0f905401f11"/>
+        <ObjectProperty IRI="#CompetenceUnder"/>
+        <ObjectProperty IRI="#OWLObjectProperty_ad7dd808_3e1e_43be_a750_9e31339d0c3f"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_1588b0c7_ed7d_4630_a2cd_58c9989ff85d"/>
-        <ObjectProperty IRI="#OWLObjectProperty_e9449be8_30c1_48da_8f3c_46f7e5f520d0"/>
+        <ObjectProperty IRI="#Connected"/>
+        <ObjectProperty IRI="#TransportationProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_1be4988e_c0b9_4291_aa85_0332d2167909"/>
-        <ObjectProperty IRI="#OWLObjectProperty_db815392_7a8f_4b15_97ea_184ede4d2dc6"/>
+        <ObjectProperty IRI="#IsCompetentOn"/>
+        <ObjectProperty IRI="#RegionProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ManagementAuthorityProperty"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#OWLObjectProperty_05b673ba_6b7e_4096_a61d_40f1074f57c5"/>
+        <ObjectProperty IRI="#ManagementAuthorityProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#OWLObjectProperty_25109f36_3319_4ce9_a458_8fe6c05f668a"/>
         <ObjectProperty IRI="#OWLObjectProperty_ad7dd808_3e1e_43be_a750_9e31339d0c3f"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_3a3100ba_c0ea_4caf_bff3_9f8ac4f8c700"/>
-        <ObjectProperty IRI="#OWLObjectProperty_0ed7082b_ce6d_4650_b277_4a78143b6e55"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#OWLObjectProperty_3d107760_fc29_47fc_90d6_23d0ffc295d9"/>
@@ -541,106 +563,45 @@
         <ObjectProperty IRI="#OWLObjectProperty_ad7dd808_3e1e_43be_a750_9e31339d0c3f"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_43d65880_eebf_4555_91e7_edf1710ba673"/>
-        <ObjectProperty IRI="#OWLObjectProperty_c06bc04f_b6b6_45f4_a9ea_f9efadc475ff"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_45e33071_679e_4740_be62_5246dbfd1a58"/>
-        <ObjectProperty IRI="#OWLObjectProperty_0f5ff21f_044d_46bf_8db5_49514e8ea8eb"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_4942d59f_b7db_4201_9239_4ac64a9f548b"/>
-        <ObjectProperty IRI="#OWLObjectProperty_e4f08de8_dc40_47e5_9f79_c65d418d7837"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_510d11be_12b2_46ae_b5de_5c188251ef36"/>
-        <ObjectProperty IRI="#OWLObjectProperty_732f87a3_ef8c_43dc_b38c_e918f2d6817f"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_57fccc0d_8660_4d40_bc90_968dbdfe292b"/>
-        <ObjectProperty IRI="#OWLObjectProperty_db815392_7a8f_4b15_97ea_184ede4d2dc6"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_60c1ca00_e563_4394_a20e_02aeb07e8ca1"/>
-        <ObjectProperty IRI="#OWLObjectProperty_732f87a3_ef8c_43dc_b38c_e918f2d6817f"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_627f7056_5d18_4b46_a9e6_f114cea57d6c"/>
-        <ObjectProperty IRI="#OWLObjectProperty_45e33071_679e_4740_be62_5246dbfd1a58"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_6ff81f71_0c1c_4074_ac62_35a881b38688"/>
-        <ObjectProperty IRI="#OWLObjectProperty_ad7dd808_3e1e_43be_a750_9e31339d0c3f"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_732f87a3_ef8c_43dc_b38c_e918f2d6817f"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_761bbb58_52a9_4aa0_9d0b_e0f905401f11"/>
-        <ObjectProperty IRI="#OWLObjectProperty_ad7dd808_3e1e_43be_a750_9e31339d0c3f"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_ab53b22b_4114_40a2_94bd_6cf531537535"/>
-        <ObjectProperty IRI="#OWLObjectProperty_732f87a3_ef8c_43dc_b38c_e918f2d6817f"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_abcaed28_117b_4190_9faa_c166a58cf4d8"/>
-        <ObjectProperty IRI="#OWLObjectProperty_761bbb58_52a9_4aa0_9d0b_e0f905401f11"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#OWLObjectProperty_ad7dd808_3e1e_43be_a750_9e31339d0c3f"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_b2303244_e150_4f49_96f0_06dabb30671a"/>
-        <ObjectProperty IRI="#OWLObjectProperty_0ed7082b_ce6d_4650_b277_4a78143b6e55"/>
+        <ObjectProperty IRI="#RegionProperty"/>
+        <ObjectProperty IRI="#AdministrativeDivisionProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_c06bc04f_b6b6_45f4_a9ea_f9efadc475ff"/>
+        <ObjectProperty IRI="#TransportationProperty"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_d355a286_4533_4e7c_ac9a_9a2ee74ef563"/>
-        <ObjectProperty IRI="#OWLObjectProperty_e4f08de8_dc40_47e5_9f79_c65d418d7837"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_db815392_7a8f_4b15_97ea_184ede4d2dc6"/>
-        <ObjectProperty IRI="#OWLObjectProperty_ad7dd808_3e1e_43be_a750_9e31339d0c3f"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_e0d42ef5_560c_4781_8b9c_620d7377a7d8"/>
-        <ObjectProperty IRI="#OWLObjectProperty_ad7dd808_3e1e_43be_a750_9e31339d0c3f"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_e4f08de8_dc40_47e5_9f79_c65d418d7837"/>
-        <ObjectProperty IRI="#OWLObjectProperty_0f5ff21f_044d_46bf_8db5_49514e8ea8eb"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_ec5b1047_2e82_42e0_8eea_35d10d9c3f62"/>
-        <ObjectProperty IRI="#OWLObjectProperty_45e33071_679e_4740_be62_5246dbfd1a58"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_f2977743_70e4_4e97_ac62_9813fd3f9999"/>
-        <ObjectProperty IRI="#OWLObjectProperty_0f5ff21f_044d_46bf_8db5_49514e8ea8eb"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#OWLObjectProperty_f657e5a0_b257_4d5c_9375_b8e3da470784"/>
-        <ObjectProperty IRI="#OWLObjectProperty_db815392_7a8f_4b15_97ea_184ede4d2dc6"/>
-    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#CompetenceUnder"/>
+        <ObjectProperty IRI="#IsCompetentOn"/>
+    </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#OWLObjectProperty_05b673ba_6b7e_4096_a61d_40f1074f57c5"/>
         <ObjectProperty IRI="#OWLObjectProperty_43278d1c_5048_4441_b9f5_83b778580efe"/>
     </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#Connected"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#CompetenceUnder"/>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Connected"/>
+        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsCompetentOn"/>
+        <Class IRI="#OWLClass_8e8b2d7c_df5f_4c9c_9b85_2ae1359becef"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#OWLObjectProperty_05b673ba_6b7e_4096_a61d_40f1074f57c5"/>
         <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#OWLObjectProperty_0f5ff21f_044d_46bf_8db5_49514e8ea8eb"/>
-        <Class IRI="#OWLClass_677d9250_f9f4_4839_8471_c16794d23441"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#OWLObjectProperty_25109f36_3319_4ce9_a458_8fe6c05f668a"/>
         <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
     </ObjectPropertyDomain>
@@ -652,32 +613,21 @@
         <ObjectProperty IRI="#OWLObjectProperty_43278d1c_5048_4441_b9f5_83b778580efe"/>
         <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#OWLObjectProperty_6ff81f71_0c1c_4074_ac62_35a881b38688"/>
-        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#OWLObjectProperty_db815392_7a8f_4b15_97ea_184ede4d2dc6"/>
-        <Class IRI="#OWLClass_e35af0c2_3277_4fea_8ba1_9f4594a20319"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#OWLObjectProperty_e0d42ef5_560c_4781_8b9c_620d7377a7d8"/>
-        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#OWLObjectProperty_e4f08de8_dc40_47e5_9f79_c65d418d7837"/>
-        <Class IRI="#OWLClass_677d9250_f9f4_4839_8471_c16794d23441"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#OWLObjectProperty_05b673ba_6b7e_4096_a61d_40f1074f57c5"/>
+        <ObjectProperty IRI="#CompetenceUnder"/>
+        <Class IRI="#OWLClass_8e8b2d7c_df5f_4c9c_9b85_2ae1359becef"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Connected"/>
+        <Class IRI="#OWLClass_677d9250_f9f4_4839_8471_c16794d23441"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsCompetentOn"/>
         <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#OWLObjectProperty_1588b0c7_ed7d_4630_a2cd_58c9989ff85d"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#OWLObjectProperty_1588b0c7_ed7d_4630_a2cd_58c9989ff85d"/>
-            <Class IRI="#OWLClass_859edcd9_3ec6_418c_8e62_8ece3082387a"/>
-        </ObjectSomeValuesFrom>
+        <ObjectProperty IRI="#OWLObjectProperty_05b673ba_6b7e_4096_a61d_40f1074f57c5"/>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#OWLObjectProperty_25109f36_3319_4ce9_a458_8fe6c05f668a"/>
@@ -691,17 +641,89 @@
         <ObjectProperty IRI="#OWLObjectProperty_43278d1c_5048_4441_b9f5_83b778580efe"/>
         <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
     </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#OWLObjectProperty_6ff81f71_0c1c_4074_ac62_35a881b38688"/>
-        <Class IRI="#OWLClass_f5f954b1_6414_4225_bb31_cf1c18613c66"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#OWLObjectProperty_e0d42ef5_560c_4781_8b9c_620d7377a7d8"/>
-        <Class IRI="#OWLClass_8e8b2d7c_df5f_4c9c_9b85_2ae1359becef"/>
-    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AbundanceCategory"/>
+        <DataProperty IRI="#SpeciesValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Address"/>
+        <DataProperty IRI="#OWLDataProperty_41f30c3b_ccf1_4955_9e01_70f362a67e51"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AdministrativeDivisionCode"/>
+        <DataProperty IRI="#IdentificationValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AreaCovered"/>
+        <DataProperty IRI="#ProtectedSiteValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DDLatitude"/>
+        <DataProperty IRI="#OWLDataProperty_cbdbc859_ed1b_4fac_9caf_c2d52a4f018f"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DDLongitude"/>
+        <DataProperty IRI="#OWLDataProperty_cbdbc859_ed1b_4fac_9caf_c2d52a4f018f"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DMSLatitude"/>
+        <DataProperty IRI="#OWLDataProperty_a6e17a3f_b4d8_4b3e_a032_593cb6253112"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DMSLongitude"/>
+        <DataProperty IRI="#OWLDataProperty_a6e17a3f_b4d8_4b3e_a032_593cb6253112"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Designation"/>
+        <DataProperty IRI="#ProtectedSiteValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Fax"/>
+        <DataProperty IRI="#OWLDataProperty_41f30c3b_ccf1_4955_9e01_70f362a67e51"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#IdentificationValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#LocalName"/>
+        <DataProperty IRI="#ProtectedSiteValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ManagementAuthorityValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MarineAreaCovered"/>
+        <DataProperty IRI="#ProtectedSiteValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="#IdentificationValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Natura2000PSID"/>
+        <DataProperty IRI="#ProtectedSiteValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Natura2000SiteCode"/>
+        <DataProperty IRI="#ManagementAuthorityValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Natura2000SiteCode"/>
+        <DataProperty IRI="#SpeciesValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Natura2000SpeciesID"/>
+        <DataProperty IRI="#SpeciesValue"/>
+    </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#OWLDataProperty_3eb7e0c8_1f0a_4ac1_b370_7c4fbe7d4590"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#OWLDataProperty_41f30c3b_ccf1_4955_9e01_70f362a67e51"/>
+        <DataProperty IRI="#ManagementAuthorityValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#OWLDataProperty_623e9d42_4f57_480c_aef0_12905a302e3c"/>
@@ -715,11 +737,226 @@
         <DataProperty IRI="#OWLDataProperty_cbdbc859_ed1b_4fac_9caf_c2d52a4f018f"/>
         <DataProperty IRI="#OWLDataProperty_3eb7e0c8_1f0a_4ac1_b370_7c4fbe7d4590"/>
     </SubDataPropertyOf>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_0871b77d_262e_4632_b546_bdbb8858e98f</IRI>
-        <Literal xml:lang="en">Tel</Literal>
-    </AnnotationAssertion>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#PSType"/>
+        <DataProperty IRI="#ProtectedSiteValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ProtectedSiteValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SpeciesValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Status"/>
+        <DataProperty IRI="#ProtectedSiteValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#StatusYear"/>
+        <DataProperty IRI="#ProtectedSiteValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Supergroup"/>
+        <DataProperty IRI="#SpeciesValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Telephone"/>
+        <DataProperty IRI="#OWLDataProperty_41f30c3b_ccf1_4955_9e01_70f362a67e51"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TransportationOwnership"/>
+        <DataProperty IRI="#TransportationValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TransportationValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#WDPAID"/>
+        <DataProperty IRI="#ProtectedSiteValue"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Address"/>
+        <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AdministrativeDivisionCode"/>
+        <Class IRI="#OWLClass_5a2e64bb_f571_4a0d_b17d_6c537b05de0a"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AreaCovered"/>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Designation"/>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Fax"/>
+        <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#LocalName"/>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MarineAreaCovered"/>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Natura2000PSID"/>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Natura2000SiteCode"/>
+        <Class IRI="#OWLClass_08a69a9a_4452_4760_9399_b6b117ffe529"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Natura2000SiteCode"/>
+        <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Natura2000SpeciesID"/>
+        <Class IRI="#OWLClass_08a69a9a_4452_4760_9399_b6b117ffe529"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#OWLDataProperty_623e9d42_4f57_480c_aef0_12905a302e3c"/>
+        <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#OWLDataProperty_a6e17a3f_b4d8_4b3e_a032_593cb6253112"/>
+        <Class IRI="#OWLClass_677d9250_f9f4_4839_8471_c16794d23441"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#OWLDataProperty_cbdbc859_ed1b_4fac_9caf_c2d52a4f018f"/>
+        <Class IRI="#OWLClass_677d9250_f9f4_4839_8471_c16794d23441"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PSType"/>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Status"/>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#StatusYear"/>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Supergroup"/>
+        <Class IRI="#OWLClass_08a69a9a_4452_4760_9399_b6b117ffe529"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Telephone"/>
+        <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TransportationOwnership"/>
+        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TransportationValue"/>
+        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#WDPAID"/>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AdministrativeDivisionCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AreaCovered"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Designation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Fax"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#LocalName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MarineAreaCovered"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Natura2000PSID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Natura2000SiteCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Natura2000SpeciesID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#OWLDataProperty_623e9d42_4f57_480c_aef0_12905a302e3c"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#OWLDataProperty_a6e17a3f_b4d8_4b3e_a032_593cb6253112"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#OWLDataProperty_cbdbc859_ed1b_4fac_9caf_c2d52a4f018f"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PSType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Status"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#StatusYear"/>
+        <Datatype abbreviatedIRI="xsd:short"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Supergroup"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Telephone"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TransportationOwnership"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TransportationValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#WDPAID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLClass_08a69a9a_4452_4760_9399_b6b117ffe529</IRI>
@@ -727,18 +964,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_1664267d_0d74_434a_ab1e_f6402a24bdfb</IRI>
-        <Literal xml:lang="en">CoastalProtectedArea</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLClass_1833fc84_e3ba_4b22_9692_71dc1defa5ce</IRI>
         <Literal xml:lang="en">CarSharingService</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_248fab47_eb1a_418e_b733_d488331cb82e</IRI>
-        <Literal xml:lang="en">ProtectedSiteValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -749,11 +976,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7</IRI>
         <Literal xml:lang="en">ManagementAuthority</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_532c3f01_67ba_41e7_ae37_bb0dc835a9ff</IRI>
-        <Literal xml:lang="en">Natura2000ProtectedSite</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -773,12 +995,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLClass_5a2e64bb_f571_4a0d_b17d_6c537b05de0a</IRI>
-        <Literal xml:lang="en">AdministrativeArea</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_5f0e6444_24f3_44f7_932e_f045b6b895f2</IRI>
-        <Literal xml:lang="en">Address</Literal>
+        <Literal xml:lang="en">AdministrativeDivision</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -792,28 +1009,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_6b5dbef8_c823_4eea_b75e_a2e806c88e71</IRI>
-        <Literal xml:lang="en">Fax</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_6bb50951_5348_4976_894e_d28fb9317d89</IRI>
-        <Literal xml:lang="en">ProtectedSiteDesignation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6</IRI>
         <Literal xml:lang="en">ProtectedSite</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_833a11d5_11cf_49dd_89b3_8d806e74aa4d</IRI>
-        <Literal xml:lang="en">TerrestrialProtectedArea</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_859edcd9_3ec6_418c_8e62_8ece3082387a</IRI>
-        <Literal xml:lang="en">ContactInformation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -827,11 +1024,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_91e35f7b_9903_48fa_a7ba_7d38593874c3</IRI>
-        <Literal xml:lang="en">PublicTransportationPoint</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLClass_9cb6ba99_7423_42c2_af7b_e400bbc7876a</IRI>
         <Literal xml:lang="en">BicycleRentalService</Literal>
     </AnnotationAssertion>
@@ -842,28 +1034,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_ab95e488_5f3b_468a_9c99_49eec4877ad7</IRI>
-        <Literal xml:lang="en">PrivateTransportationService</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLClass_af2e5396_6918_4427_bc61_40e2b169d6ad</IRI>
         <Literal xml:lang="en">BoatRentalService</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_b2adad00_3d65_44c7_a0f2_48a1e06a6c3a</IRI>
-        <Literal xml:lang="en">MarineProtectedArea</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#OWLClass_b3435357_38fe_452b_abef_672f61fb8031</IRI>
-        <Literal xml:lang="en">Coordinate expressed in Degree s/Minutes/Seconds (DMS) format.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_b3435357_38fe_452b_abef_672f61fb8031</IRI>
-        <Literal xml:lang="en">DMSCoordinateValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -882,53 +1054,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_c24e2132_2d37_49cf_a0d4_2d8a5052c19d</IRI>
-        <Literal xml:lang="en">Airport</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_de317023_3a44_4181_b55b_0dccecaf7571</IRI>
-        <Literal xml:lang="en">Value</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_e35af0c2_3277_4fea_8ba1_9f4594a20319</IRI>
-        <Literal xml:lang="en">WdpaProtectedSite</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_e4d006e4_ef62_4f22_b24f_50b466c75302</IRI>
-        <Literal xml:lang="en">CoordinateValue</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_e899d439_6db0_464c_b5e6_52684d093238</IRI>
-        <Literal xml:lang="en">Email</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#OWLClass_e92f2c0b_2486_433d_a003_7c3a1ccb56d2</IRI>
-        <Literal xml:lang="en">Coordinate expressed in Decimal Degree (DD) format.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_e92f2c0b_2486_433d_a003_7c3a1ccb56d2</IRI>
-        <Literal xml:lang="en">DDCoordinateValue</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLClass_f033092b_76bb_46da_ad4a_3bd28c6bdca8</IRI>
-        <Literal xml:lang="en">IndependentEntity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_f5f954b1_6414_4225_bb31_cf1c18613c66</IRI>
-        <Literal xml:lang="en">ProtectedSiteType</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLClass_f964803a_cc7f_469e_b2af_4e6f8d3905af</IRI>
-        <Literal xml:lang="en">SpatialValue</Literal>
+        <Literal xml:lang="en">PhysicalEntity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -962,48 +1089,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_04686314_6ffe_49cc_bd81_d665987baac2</IRI>
-        <Literal xml:lang="en">hasEmail</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLObjectProperty_05b673ba_6b7e_4096_a61d_40f1074f57c5</IRI>
         <Literal xml:lang="en">Manages</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_0ed7082b_ce6d_4650_b277_4a78143b6e55</IRI>
-        <Literal xml:lang="en">Natura2000ProtectedSiteProperty</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_0f5ff21f_044d_46bf_8db5_49514e8ea8eb</IRI>
-        <Literal xml:lang="en">SpatialObjectProperty</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_14b26993_0d81_45d0_987f_e5a414ab0dca</IRI>
-        <Literal xml:lang="en">HasMarineAreaPercentage</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_1588b0c7_ed7d_4630_a2cd_58c9989ff85d</IRI>
-        <Literal xml:lang="en">HasContactInformation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_1be4988e_c0b9_4291_aa85_0332d2167909</IRI>
-        <Literal xml:lang="en">hasFoundationDate</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLObjectProperty_25109f36_3319_4ce9_a458_8fe6c05f668a</IRI>
         <Literal xml:lang="en">Hosts</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_3a3100ba_c0ea_4caf_bff3_9f8ac4f8c700</IRI>
-        <Literal xml:lang="en">hasNatura2000ID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1017,118 +1109,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_43d65880_eebf_4555_91e7_edf1710ba673</IRI>
-        <Literal xml:lang="en">HasName</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_45e33071_679e_4740_be62_5246dbfd1a58</IRI>
-        <Literal xml:lang="en">AreaSpatialProperty</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_4942d59f_b7db_4201_9239_4ac64a9f548b</IRI>
-        <Literal xml:lang="en">HasLatitude</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_510d11be_12b2_46ae_b5de_5c188251ef36</IRI>
-        <Literal xml:lang="en">HasNatura2000SpeciesID</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_57fccc0d_8660_4d40_bc90_968dbdfe292b</IRI>
-        <Literal xml:lang="en">hasWdpaID</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_60c1ca00_e563_4394_a20e_02aeb07e8ca1</IRI>
-        <Literal xml:lang="en">HasAbundanceCategory</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_627f7056_5d18_4b46_a9e6_f114cea57d6c</IRI>
-        <Literal xml:lang="en">hasArea</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_6ff81f71_0c1c_4074_ac62_35a881b38688</IRI>
-        <Literal xml:lang="en">hasType</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_732f87a3_ef8c_43dc_b38c_e918f2d6817f</IRI>
-        <Literal xml:lang="en">SpeciesProperty</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_761bbb58_52a9_4aa0_9d0b_e0f905401f11</IRI>
-        <Literal xml:lang="en">MarineProtectedSiteProperty</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_ab53b22b_4114_40a2_94bd_6cf531537535</IRI>
-        <Literal xml:lang="en">HasSupergroup</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_abcaed28_117b_4190_9faa_c166a58cf4d8</IRI>
-        <Literal xml:lang="en">HasMarineArea</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLObjectProperty_ad7dd808_3e1e_43be_a750_9e31339d0c3f</IRI>
         <Literal xml:lang="en">ProtectedSiteProperty</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_b2303244_e150_4f49_96f0_06dabb30671a</IRI>
-        <Literal xml:lang="en">hasNatura2000Designation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_c06bc04f_b6b6_45f4_a9ea_f9efadc475ff</IRI>
-        <Literal xml:lang="en">EntityProperty</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_d355a286_4533_4e7c_ac9a_9a2ee74ef563</IRI>
-        <Literal xml:lang="en">HasLongitude</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_db815392_7a8f_4b15_97ea_184ede4d2dc6</IRI>
-        <Literal xml:lang="en">WDPAProtectedSiteProperty</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_e0d42ef5_560c_4781_8b9c_620d7377a7d8</IRI>
-        <Literal xml:lang="en">HasAdministrativeRegion</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_e4f08de8_dc40_47e5_9f79_c65d418d7837</IRI>
-        <Literal xml:lang="en">PointSpatialProperty</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_e9449be8_30c1_48da_8f3c_46f7e5f520d0</IRI>
-        <Literal xml:lang="en">ManagementAuthorityProperty</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_ec5b1047_2e82_42e0_8eea_35d10d9c3f62</IRI>
-        <Literal xml:lang="en">hasAreaPercentage</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_f2977743_70e4_4e97_ac62_9813fd3f9999</IRI>
-        <Literal xml:lang="en">SpatialObjectRelationProperty</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#OWLObjectProperty_f657e5a0_b257_4d5c_9375_b8e3da470784</IRI>
-        <Literal xml:lang="en">hasWdpaDesignation</Literal>
     </AnnotationAssertion>
 </Ontology>
 
