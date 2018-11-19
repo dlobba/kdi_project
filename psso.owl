@@ -109,6 +109,9 @@
         <Class IRI="#OWLClass_b93614f7_713d_447e_91db_95b7b4639ef0"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#OWLClass_c24e2132_2d37_49cf_a0d4_2d8a5052c19d"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#OWLClass_de317023_3a44_4181_b55b_0dccecaf7571"/>
     </Declaration>
     <Declaration>
@@ -134,6 +137,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#OWLClass_fcfea33d_327a_4577_92b4_3d21fefa2c79"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OWLObjectProperty_04686314_6ffe_49cc_bd81_d665987baac2"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#OWLObjectProperty_05b673ba_6b7e_4096_a61d_40f1074f57c5"/>
@@ -234,6 +240,21 @@
     <Declaration>
         <ObjectProperty IRI="#OWLObjectProperty_f657e5a0_b257_4d5c_9375_b8e3da470784"/>
     </Declaration>
+    <Declaration>
+        <DataProperty IRI="#OWLDataProperty_3eb7e0c8_1f0a_4ac1_b370_7c4fbe7d4590"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#OWLDataProperty_41f30c3b_ccf1_4955_9e01_70f362a67e51"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#OWLDataProperty_623e9d42_4f57_480c_aef0_12905a302e3c"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#OWLDataProperty_a6e17a3f_b4d8_4b3e_a032_593cb6253112"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#OWLDataProperty_cbdbc859_ed1b_4fac_9caf_c2d52a4f018f"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#OWLClass_0871b77d_262e_4632_b546_bdbb8858e98f"/>
         <Class IRI="#OWLClass_859edcd9_3ec6_418c_8e62_8ece3082387a"/>
@@ -261,6 +282,20 @@
     <SubClassOf>
         <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
         <Class IRI="#OWLClass_f033092b_76bb_46da_ad4a_3bd28c6bdca8"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#OWLObjectProperty_05b673ba_6b7e_4096_a61d_40f1074f57c5"/>
+            <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#OWLDataProperty_623e9d42_4f57_480c_aef0_12905a302e3c"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_532c3f01_67ba_41e7_ae37_bb0dc835a9ff"/>
@@ -363,6 +398,10 @@
         <Class IRI="#OWLClass_ab95e488_5f3b_468a_9c99_49eec4877ad7"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#OWLClass_c24e2132_2d37_49cf_a0d4_2d8a5052c19d"/>
+        <Class IRI="#OWLClass_ab95e488_5f3b_468a_9c99_49eec4877ad7"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#OWLClass_e35af0c2_3277_4fea_8ba1_9f4594a20319"/>
         <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
     </SubClassOf>
@@ -457,6 +496,10 @@
         <Class IRI="#OWLClass_de317023_3a44_4181_b55b_0dccecaf7571"/>
         <Class IRI="#OWLClass_f033092b_76bb_46da_ad4a_3bd28c6bdca8"/>
     </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#OWLObjectProperty_04686314_6ffe_49cc_bd81_d665987baac2"/>
+        <ObjectProperty IRI="#OWLObjectProperty_e9449be8_30c1_48da_8f3c_46f7e5f520d0"/>
+    </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#OWLObjectProperty_05b673ba_6b7e_4096_a61d_40f1074f57c5"/>
         <ObjectProperty IRI="#OWLObjectProperty_ad7dd808_3e1e_43be_a750_9e31339d0c3f"/>
@@ -656,6 +699,22 @@
         <ObjectProperty IRI="#OWLObjectProperty_e0d42ef5_560c_4781_8b9c_620d7377a7d8"/>
         <Class IRI="#OWLClass_8e8b2d7c_df5f_4c9c_9b85_2ae1359becef"/>
     </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#OWLDataProperty_3eb7e0c8_1f0a_4ac1_b370_7c4fbe7d4590"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#OWLDataProperty_623e9d42_4f57_480c_aef0_12905a302e3c"/>
+        <DataProperty IRI="#OWLDataProperty_41f30c3b_ccf1_4955_9e01_70f362a67e51"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#OWLDataProperty_a6e17a3f_b4d8_4b3e_a032_593cb6253112"/>
+        <DataProperty IRI="#OWLDataProperty_3eb7e0c8_1f0a_4ac1_b370_7c4fbe7d4590"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#OWLDataProperty_cbdbc859_ed1b_4fac_9caf_c2d52a4f018f"/>
+        <DataProperty IRI="#OWLDataProperty_3eb7e0c8_1f0a_4ac1_b370_7c4fbe7d4590"/>
+    </SubDataPropertyOf>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLClass_0871b77d_262e_4632_b546_bdbb8858e98f</IRI>
@@ -823,6 +882,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_c24e2132_2d37_49cf_a0d4_2d8a5052c19d</IRI>
+        <Literal xml:lang="en">Airport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLClass_de317023_3a44_4181_b55b_0dccecaf7571</IRI>
         <Literal xml:lang="en">Value</Literal>
     </AnnotationAssertion>
@@ -870,6 +934,36 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLClass_fcfea33d_327a_4577_92b4_3d21fefa2c79</IRI>
         <Literal xml:lang="en">BoatSharingService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLDataProperty_3eb7e0c8_1f0a_4ac1_b370_7c4fbe7d4590</IRI>
+        <Literal xml:lang="en">CoordinateValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLDataProperty_41f30c3b_ccf1_4955_9e01_70f362a67e51</IRI>
+        <Literal xml:lang="en">ContactInformation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLDataProperty_623e9d42_4f57_480c_aef0_12905a302e3c</IRI>
+        <Literal xml:lang="en">Email</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLDataProperty_a6e17a3f_b4d8_4b3e_a032_593cb6253112</IRI>
+        <Literal xml:lang="en">DMSCoordinateValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLDataProperty_cbdbc859_ed1b_4fac_9caf_c2d52a4f018f</IRI>
+        <Literal xml:lang="en">DDCoordinateValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLObjectProperty_04686314_6ffe_49cc_bd81_d665987baac2</IRI>
+        <Literal xml:lang="en">hasEmail</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
