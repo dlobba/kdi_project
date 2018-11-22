@@ -97,6 +97,9 @@
         <ObjectProperty IRI="#IsCompetentOn"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#IsHosted"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#ManagementAuthorityProperty"/>
     </Declaration>
     <Declaration>
@@ -116,6 +119,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#RegionProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SpeciesProperty"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#TransportationProperty"/>
@@ -161,6 +167,12 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#MarineAreaCovered"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NUTS2Code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NUTS3Code"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Name"/>
@@ -211,13 +223,10 @@
         <DataProperty IRI="#Telephone"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#TransportationOwnership"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#TransportationValue"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#WDPAID"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="#psso:abundance"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Country"/>
@@ -229,8 +238,36 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_08a69a9a_4452_4760_9399_b6b117ffe529"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsHosted"/>
+            <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_08a69a9a_4452_4760_9399_b6b117ffe529"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#SpeciesValue"/>
+            <DataProperty IRI="#AbundanceCategory"/>
+            <Datatype IRI="#psso:abundance"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_08a69a9a_4452_4760_9399_b6b117ffe529"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Natura2000SiteCode"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_08a69a9a_4452_4760_9399_b6b117ffe529"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Natura2000SpeciesID"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_08a69a9a_4452_4760_9399_b6b117ffe529"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Supergroup"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
     </SubClassOf>
@@ -313,13 +350,6 @@
         <DataSomeValuesFrom>
             <DataProperty IRI="#OWLDataProperty_cbdbc859_ed1b_4fac_9caf_c2d52a4f018f"/>
             <Datatype abbreviatedIRI="xsd:double"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#TransportationOwnership"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -440,6 +470,20 @@
         <Class IRI="#OWLClass_5a2e64bb_f571_4a0d_b17d_6c537b05de0a"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#OWLClass_89f36ee1_b968_4d9e_8bee_40ad390a7fae"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#OWLDataProperty_a6e17a3f_b4d8_4b3e_a032_593cb6253112"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_89f36ee1_b968_4d9e_8bee_40ad390a7fae"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#OWLDataProperty_cbdbc859_ed1b_4fac_9caf_c2d52a4f018f"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#OWLClass_8e8b2d7c_df5f_4c9c_9b85_2ae1359becef"/>
         <Class IRI="#OWLClass_5a2e64bb_f571_4a0d_b17d_6c537b05de0a"/>
     </SubClassOf>
@@ -449,6 +493,13 @@
             <ObjectProperty IRI="#IsCompetentOn"/>
             <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_8e8b2d7c_df5f_4c9c_9b85_2ae1359becef"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#NUTS2Code"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OWLClass_9cb6ba99_7423_42c2_af7b_e400bbc7876a"/>
@@ -481,6 +532,13 @@
     <SubClassOf>
         <Class IRI="#Province"/>
         <Class IRI="#OWLClass_5a2e64bb_f571_4a0d_b17d_6c537b05de0a"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Province"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#NUTS3Code"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="owl:Thing"/>
@@ -543,6 +601,10 @@
         <ObjectProperty IRI="#RegionProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsHosted"/>
+        <ObjectProperty IRI="#SpeciesProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#ManagementAuthorityProperty"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -571,12 +633,20 @@
         <ObjectProperty IRI="#AdministrativeDivisionProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#SpeciesProperty"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#TransportationProperty"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#CompetenceUnder"/>
         <ObjectProperty IRI="#IsCompetentOn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#IsHosted"/>
+        <ObjectProperty IRI="#OWLObjectProperty_25109f36_3319_4ce9_a458_8fe6c05f668a"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#OWLObjectProperty_05b673ba_6b7e_4096_a61d_40f1074f57c5"/>
@@ -596,6 +666,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#IsCompetentOn"/>
         <Class IRI="#OWLClass_8e8b2d7c_df5f_4c9c_9b85_2ae1359becef"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsHosted"/>
+        <Class IRI="#OWLClass_08a69a9a_4452_4760_9399_b6b117ffe529"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#OWLObjectProperty_05b673ba_6b7e_4096_a61d_40f1074f57c5"/>
@@ -623,6 +697,10 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#IsCompetentOn"/>
+        <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsHosted"/>
         <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -698,6 +776,14 @@
         <DataProperty IRI="#ProtectedSiteValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#NUTS2Code"/>
+        <DataProperty IRI="#AdministrativeDivisionCode"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#NUTS3Code"/>
+        <DataProperty IRI="#AdministrativeDivisionCode"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#Name"/>
         <DataProperty IRI="#IdentificationValue"/>
     </SubDataPropertyOf>
@@ -766,17 +852,13 @@
         <DataProperty IRI="#OWLDataProperty_41f30c3b_ccf1_4955_9e01_70f362a67e51"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#TransportationOwnership"/>
-        <DataProperty IRI="#TransportationValue"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#TransportationValue"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#WDPAID"/>
         <DataProperty IRI="#ProtectedSiteValue"/>
     </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AbundanceCategory"/>
+        <Class IRI="#OWLClass_08a69a9a_4452_4760_9399_b6b117ffe529"/>
+    </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Address"/>
         <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
@@ -804,6 +886,14 @@
     <DataPropertyDomain>
         <DataProperty IRI="#MarineAreaCovered"/>
         <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NUTS2Code"/>
+        <Class IRI="#OWLClass_8e8b2d7c_df5f_4c9c_9b85_2ae1359becef"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NUTS3Code"/>
+        <Class IRI="#Province"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Name"/>
@@ -858,17 +948,13 @@
         <Class IRI="#OWLClass_41ca455c_3cba_44cd_9a12_0ede745e3fb7"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#TransportationOwnership"/>
-        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#TransportationValue"/>
-        <Class IRI="#OWLClass_5f7ea605_ec8f_46c7_ba91_a0af7a39c5f2"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#WDPAID"/>
         <Class IRI="#OWLClass_6d83462d_b85b_447f_9da8_f8d1904325b6"/>
     </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#AbundanceCategory"/>
+        <Datatype IRI="#psso:abundance"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#Address"/>
         <Datatype abbreviatedIRI="xsd:string"/>
@@ -896,6 +982,14 @@
     <DataPropertyRange>
         <DataProperty IRI="#MarineAreaCovered"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NUTS2Code"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NUTS3Code"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#Name"/>
@@ -943,14 +1037,6 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#Telephone"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#TransportationOwnership"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#TransportationValue"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -1100,7 +1186,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLObjectProperty_3d107760_fc29_47fc_90d6_23d0ffc295d9</IRI>
-        <Literal xml:lang="en">isReachableBy</Literal>
+        <Literal xml:lang="en">IsReachableBy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1112,6 +1198,16 @@
         <IRI>#OWLObjectProperty_ad7dd808_3e1e_43be_a750_9e31339d0c3f</IRI>
         <Literal xml:lang="en">ProtectedSiteProperty</Literal>
     </AnnotationAssertion>
+    <DatatypeDefinition>
+        <Datatype IRI="#psso:abundance"/>
+        <DataOneOf>
+            <Literal>Common</Literal>
+            <Literal>Present</Literal>
+            <Literal>Rare</Literal>
+            <Literal>Unknown</Literal>
+            <Literal>Very Rare</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
 </Ontology>
 
 
