@@ -1056,7 +1056,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OWLClass_3d43b6bf_df69_4021_bdda_2f627507219d</IRI>
-        <Literal xml:lang="en">TrainPlatform</Literal>
+        <Literal xml:lang="en">TrainStation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
