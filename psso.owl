@@ -1079,12 +1079,12 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>AbundanceCategory</IRI>
         <Literal xml:lang="en">AbundanceCategory</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Address</IRI>
         <Literal xml:lang="en">Address</Literal>
     </AnnotationAssertion>
@@ -1094,12 +1094,12 @@
         <Literal xml:lang="en">AdministrativeDivision</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>AdministrativeDivisionCode</IRI>
         <Literal xml:lang="en">AdministrativeDivisionCode</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>AdministrativeDivisionProperty</IRI>
         <Literal xml:lang="en">AdministrativeDivisionProperty</Literal>
     </AnnotationAssertion>
@@ -1114,7 +1114,7 @@
         <Literal xml:lang="en">Airport</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>AreaCovered</IRI>
         <Literal xml:lang="en">AreaCovered</Literal>
     </AnnotationAssertion>
@@ -1154,7 +1154,7 @@
         <Literal xml:lang="en">City</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>CompetenceUnder</IRI>
         <Literal xml:lang="en">CompetenceUnder</Literal>
     </AnnotationAssertion>
@@ -1164,7 +1164,7 @@
         <Literal xml:lang="en">Comprises</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Connected</IRI>
         <Literal xml:lang="en">Connected</Literal>
     </AnnotationAssertion>
@@ -1179,7 +1179,7 @@
         <Literal xml:lang="en">CoordinateValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Country</IRI>
         <Literal xml:lang="en">Country</Literal>
     </AnnotationAssertion>
@@ -1204,17 +1204,17 @@
         <Literal xml:lang="en">DMSCoordinateValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>DMSLatitude</IRI>
         <Literal xml:lang="en">DMSLatitude</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>DMSLongitude</IRI>
         <Literal xml:lang="en">DMSLongitude</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Designation</IRI>
         <Literal xml:lang="en">Designation</Literal>
     </AnnotationAssertion>
@@ -1224,7 +1224,7 @@
         <Literal xml:lang="en">Email</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Fax</IRI>
         <Literal xml:lang="en">Fax</Literal>
     </AnnotationAssertion>
@@ -1239,12 +1239,12 @@
         <Literal xml:lang="en">Hosts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>IdentificationValue</IRI>
         <Literal xml:lang="en">IdentificationValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>IsCompetentOn</IRI>
         <Literal xml:lang="en">IsCompetentOn</Literal>
     </AnnotationAssertion>
@@ -1254,7 +1254,7 @@
         <Literal xml:lang="en">IsComprised</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>IsHosted</IRI>
         <Literal xml:lang="en">IsHosted</Literal>
     </AnnotationAssertion>
@@ -1279,12 +1279,12 @@
         <Literal xml:lang="en">ManagementAuthority</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>ManagementAuthorityProperty</IRI>
         <Literal xml:lang="en">ManagementAuthorityProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>ManagementAuthorityValue</IRI>
         <Literal xml:lang="en">ManagementAuthorityValue</Literal>
     </AnnotationAssertion>
@@ -1294,37 +1294,37 @@
         <Literal xml:lang="en">Manages</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>MarineAreaCovered</IRI>
         <Literal xml:lang="en">MarineAreaCovered</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>NUTS2Code</IRI>
         <Literal xml:lang="en">NUTS2Code</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>NUTS3Code</IRI>
         <Literal xml:lang="en">NUTS3Code</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Name</IRI>
         <Literal xml:lang="en">Name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Natura2000PSID</IRI>
         <Literal xml:lang="en">Natura2000PSID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Natura2000SpeciesID</IRI>
         <Literal xml:lang="en">Natura2000SpeciesID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>PSType</IRI>
         <Literal xml:lang="en">PSType</Literal>
     </AnnotationAssertion>
@@ -1344,12 +1344,12 @@
         <Literal xml:lang="en">ProtectedSiteProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>ProtectedSiteValue</IRI>
         <Literal xml:lang="en">ProtectedSiteValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Province</IRI>
         <Literal xml:lang="en">Province</Literal>
     </AnnotationAssertion>
@@ -1359,7 +1359,7 @@
         <Literal xml:lang="en">Region</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>RegionProperty</IRI>
         <Literal xml:lang="en">RegionProperty</Literal>
     </AnnotationAssertion>
@@ -1374,7 +1374,7 @@
         <Literal xml:lang="en">SharingService</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>SocialEntity</IRI>
         <Literal xml:lang="en">SocialEntity</Literal>
     </AnnotationAssertion>
@@ -1389,32 +1389,32 @@
         <Literal xml:lang="en">Species</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>SpeciesProperty</IRI>
         <Literal xml:lang="en">SpeciesProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>SpeciesValue</IRI>
         <Literal xml:lang="en">SpeciesValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Status</IRI>
         <Literal xml:lang="en">Status</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>StatusYear</IRI>
         <Literal xml:lang="en">StatusYear</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Supergroup</IRI>
         <Literal xml:lang="en">Supergroup</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Telephone</IRI>
         <Literal xml:lang="en">Telephone</Literal>
     </AnnotationAssertion>
@@ -1429,12 +1429,12 @@
         <Literal xml:lang="en">TransportationPoint</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>TransportationProperty</IRI>
         <Literal xml:lang="en">TransportationProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>WDPAID</IRI>
         <Literal xml:lang="en">WDPAID</Literal>
     </AnnotationAssertion>
