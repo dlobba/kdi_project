@@ -103,6 +103,12 @@
         <ObjectProperty IRI="Connected"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="HasProtectedSite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="HasSpecies"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="Hosts"/>
     </Declaration>
     <Declaration>
@@ -128,6 +134,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="ProtectedSiteProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="ProtectedSiteSpeciesProperty"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="RegionProperty"/>
@@ -446,15 +455,15 @@
     <SubClassOf>
         <Class IRI="ProtectedSiteSpecies"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="Hosts"/>
-            <Class IRI="Species"/>
+            <ObjectProperty IRI="HasProtectedSite"/>
+            <Class IRI="ProtectedSite"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ProtectedSiteSpecies"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="IsHosted"/>
-            <Class IRI="ProtectedSite"/>
+            <ObjectProperty IRI="HasSpecies"/>
+            <Class IRI="Species"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -643,6 +652,14 @@
         <ObjectProperty IRI="TransportationProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="HasProtectedSite"/>
+        <ObjectProperty IRI="ProtectedSiteSpeciesProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="HasSpecies"/>
+        <ObjectProperty IRI="ProtectedSiteSpeciesProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="Hosts"/>
         <ObjectProperty IRI="ProtectedSiteProperty"/>
     </SubObjectPropertyOf>
@@ -718,6 +735,14 @@
         <Class IRI="TransportationPoint"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="HasProtectedSite"/>
+        <Class IRI="ProtectedSiteSpecies"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="HasSpecies"/>
+        <Class IRI="ProtectedSiteSpecies"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="Hosts"/>
         <Class IRI="ProtectedSite"/>
     </ObjectPropertyDomain>
@@ -756,6 +781,14 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="Connected"/>
         <Class IRI="SpatialObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="HasProtectedSite"/>
+        <Class IRI="ProtectedSite"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="HasSpecies"/>
+        <Class IRI="Species"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="Hosts"/>
@@ -1411,6 +1444,16 @@
         <Literal xml:lang="en">Ferryport</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HasProtectedSite</IRI>
+        <Literal xml:lang="en">HasProtectedSite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HasSpecies</IRI>
+        <Literal xml:lang="en">HasSpecies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Hosts</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02464596</Literal>
@@ -1619,6 +1662,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ProtectedSiteSpecies</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ProtectedSiteSpeciesProperty</IRI>
+        <Literal xml:lang="en">ProtectedSiteSpeciesProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
