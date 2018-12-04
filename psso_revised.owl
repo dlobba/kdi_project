@@ -755,10 +755,6 @@
         <ObjectProperty IRI="IsCompetentOn"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="Hosts"/>
-        <ObjectProperty IRI="IsHosted"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="IsManagedBy"/>
         <ObjectProperty IRI="Manages"/>
     </InverseObjectProperties>
@@ -1440,6 +1436,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Connected</IRI>
         <Literal xml:lang="en">Connected</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ContactInformationValue</IRI>
+        <Literal xml:lang="en">ContactInformationValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
