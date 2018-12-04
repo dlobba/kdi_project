@@ -163,7 +163,7 @@
         <DataProperty IRI="BusStopValue"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="ContactInformation"/>
+        <DataProperty IRI="ContactInformationValue"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="CoordinateValue"/>
@@ -193,22 +193,13 @@
         <DataProperty IRI="Email"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="EmailAddress"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="Fax"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="FaxNumber"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="IdentificationValue"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="LocalName"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="ManagementAuthorityValue"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="MarineAreaCovered"/>
@@ -238,13 +229,7 @@
         <DataProperty IRI="Operator"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="OperatorContact"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="PSType"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="PhoneNumber"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="ProtectedSiteValue"/>
@@ -283,7 +268,7 @@
         <DataProperty IRI="WDPAID"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="WebsiteAddress"/>
+        <DataProperty IRI="Website"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="Wheelchair"/>
@@ -395,7 +380,7 @@
     <SubClassOf>
         <Class IRI="ManagementAuthority"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="ContactInformation"/>
+            <DataProperty IRI="ContactInformationValue"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
     </SubClassOf>
@@ -652,6 +637,13 @@
     <SubClassOf>
         <Class IRI="TransportationPoint"/>
         <DataSomeValuesFrom>
+            <DataProperty IRI="ContactInformationValue"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TransportationPoint"/>
+        <DataSomeValuesFrom>
             <DataProperty IRI="DDCoordinateValue"/>
             <Datatype abbreviatedIRI="xsd:decimal"/>
         </DataSomeValuesFrom>
@@ -677,35 +669,10 @@
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="TransportationPoint"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="OperatorContact"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
     <DisjointClasses>
         <Class IRI="AdministrativeDivision"/>
         <Class IRI="ProtectedSite"/>
         <Class IRI="TransportationPoint"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="Aerodrome"/>
-        <Class IRI="Airport"/>
-        <Class IRI="BusStop"/>
-        <Class IRI="Ferryport"/>
-        <Class IRI="RentalService"/>
-        <Class IRI="SharingService"/>
-        <Class IRI="TrainStation"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="BoatRentalService"/>
-        <Class IRI="BycicleRentalService"/>
-        <Class IRI="CarRentalService"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="BoatSharingService"/>
-        <Class IRI="CarSharingService"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="SpatialObject"/>
@@ -900,7 +867,7 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="Address"/>
-        <DataProperty IRI="ContactInformation"/>
+        <DataProperty IRI="ContactInformationValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="AdministrativeDivisionCode"/>
@@ -915,8 +882,8 @@
         <DataProperty IRI="TransportationPointValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="ContactInformation"/>
-        <DataProperty IRI="ManagementAuthorityValue"/>
+        <DataProperty IRI="ContactInformationValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="CoordinateValue"/>
@@ -952,19 +919,11 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="Email"/>
-        <DataProperty IRI="ContactInformation"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="EmailAddress"/>
-        <DataProperty IRI="OperatorContact"/>
+        <DataProperty IRI="ContactInformationValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="Fax"/>
-        <DataProperty IRI="ContactInformation"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="FaxNumber"/>
-        <DataProperty IRI="OperatorContact"/>
+        <DataProperty IRI="ContactInformationValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="IdentificationValue"/>
@@ -973,10 +932,6 @@
     <SubDataPropertyOf>
         <DataProperty IRI="LocalName"/>
         <DataProperty IRI="ProtectedSiteValue"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="ManagementAuthorityValue"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="MarineAreaCovered"/>
@@ -1015,16 +970,8 @@
         <DataProperty IRI="TransportationPointValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="OperatorContact"/>
-        <DataProperty IRI="TransportationPointValue"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="PSType"/>
         <DataProperty IRI="ProtectedSiteValue"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="PhoneNumber"/>
-        <DataProperty IRI="OperatorContact"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="ProtectedSiteValue"/>
@@ -1060,7 +1007,7 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="Telephone"/>
-        <DataProperty IRI="ContactInformation"/>
+        <DataProperty IRI="ContactInformationValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="TransportationPointCode"/>
@@ -1075,8 +1022,8 @@
         <DataProperty IRI="ProtectedSiteValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="WebsiteAddress"/>
-        <DataProperty IRI="OperatorContact"/>
+        <DataProperty IRI="Website"/>
+        <DataProperty IRI="ContactInformationValue"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="Wheelchair"/>
@@ -1115,16 +1062,8 @@
         <Class IRI="ManagementAuthority"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="EmailAddress"/>
-        <Class IRI="TransportationPoint"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="Fax"/>
         <Class IRI="ManagementAuthority"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="FaxNumber"/>
-        <Class IRI="TransportationPoint"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="LocalName"/>
@@ -1171,10 +1110,6 @@
         <Class IRI="ProtectedSite"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="PhoneNumber"/>
-        <Class IRI="TransportationPoint"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="RouteLine"/>
         <Class IRI="BusStop"/>
     </DataPropertyDomain>
@@ -1203,7 +1138,7 @@
         <Class IRI="ProtectedSite"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="WebsiteAddress"/>
+        <DataProperty IRI="Website"/>
         <Class IRI="TransportationPoint"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -1243,15 +1178,7 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="EmailAddress"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="Fax"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="FaxNumber"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -1299,10 +1226,6 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="PhoneNumber"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="RouteLine"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -1331,7 +1254,7 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="WebsiteAddress"/>
+        <DataProperty IRI="Website"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -1444,6 +1367,11 @@
         <Literal xml:lang="en">BusStop</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>BusStopValue</IRI>
+        <Literal xml:lang="en">BusStopValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>BycicleRentalService</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
@@ -1512,16 +1440,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Connected</IRI>
         <Literal xml:lang="en">Connected</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>ContactInformation</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06271913</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>ContactInformation</IRI>
-        <Literal xml:lang="en">ContactInformation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1616,7 +1534,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Email</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06289979</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1625,23 +1543,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>EmailAddress</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06289979</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Fax</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">03321050</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Fax</IRI>
         <Literal xml:lang="en">Fax</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>FaxNumber</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">03321050</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1746,7 +1654,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>LocalName</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06355208</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>LocalName</IRI>
+        <Literal xml:lang="en">Wordnet: Toponym</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1767,11 +1680,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>ManagementAuthorityProperty</IRI>
         <Literal xml:lang="en">ManagementAuthorityProperty</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>ManagementAuthorityValue</IRI>
-        <Literal xml:lang="en">ManagementAuthorityValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1854,9 +1762,19 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OpeningHour</IRI>
+        <Literal xml:lang="en">OpeningHour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Operator</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10398479</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Operator</IRI>
+        <Literal xml:lang="en">Operator</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1867,11 +1785,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>PSType</IRI>
         <Literal xml:lang="en">PSType</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>PhoneNumber</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06437781</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1897,6 +1810,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ProtectedSiteSpecies</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ProtectedSiteSpecies</IRI>
+        <Literal xml:lang="en">ProtectedSiteSpecies</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1934,6 +1852,11 @@
         <Literal xml:lang="en">RegionProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RelationalEntity</IRI>
+        <Literal xml:lang="en">RelationalEntity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>RentalService</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02903416</Literal>
@@ -1944,9 +1867,19 @@
         <Literal xml:lang="en">RentalService</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RentalServiceValue</IRI>
+        <Literal xml:lang="en">RentalServiceValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>RouteLine</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08633886</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RouteLine</IRI>
+        <Literal xml:lang="en">RouteLine</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1962,6 +1895,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Shelter</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">04198986</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Shelter</IRI>
+        <Literal xml:lang="en">Shelter</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2060,6 +1998,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TransportationPointValue</IRI>
+        <Literal xml:lang="en">TransportationPointValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>TransportationProperty</IRI>
         <Literal xml:lang="en">TransportationProperty</Literal>
     </AnnotationAssertion>
@@ -2075,13 +2018,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>WebsiteAddress</IRI>
+        <IRI>Website</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06370600</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Website</IRI>
+        <Literal xml:lang="en">Website</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Wheelchair</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Wheelchair</IRI>
+        <Literal xml:lang="en">Wheelchair</Literal>
     </AnnotationAssertion>
     <DatatypeDefinition>
         <Datatype IRI="psso:abundance"/>
