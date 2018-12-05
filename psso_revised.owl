@@ -808,9 +808,6 @@
         <ObjectProperty IRI="IsReachableBy"/>
         <ObjectProperty IRI="Reaches"/>
     </InverseObjectProperties>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="Connected"/>
-    </SymmetricObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="CompetenceUnder"/>
         <Class IRI="ProtectedSite"/>
@@ -1537,6 +1534,11 @@
         <Literal xml:lang="en">Country</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Covers</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">01916152</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Covers</IRI>
         <Literal xml:lang="en">Covers</Literal>
@@ -1700,6 +1702,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>IsComprised</IRI>
         <Literal xml:lang="en">IsComprised</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IsCoveredBy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">01916152</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1920,6 +1927,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Province</IRI>
         <Literal xml:lang="en">Province</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Reaches</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00019169</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
