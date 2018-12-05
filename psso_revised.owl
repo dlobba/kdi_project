@@ -1136,8 +1136,16 @@
         <Class IRI="ManagementAuthority"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="Email"/>
+        <Class IRI="TransportationPoint"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="Fax"/>
         <Class IRI="ManagementAuthority"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Fax"/>
+        <Class IRI="TransportationPoint"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="LocalName"/>
@@ -1206,6 +1214,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="Telephone"/>
         <Class IRI="ManagementAuthority"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Telephone"/>
+        <Class IRI="TransportationPoint"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="WDPAID"/>
