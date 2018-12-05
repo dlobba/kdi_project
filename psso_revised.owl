@@ -103,6 +103,9 @@
         <ObjectProperty IRI="Connected"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="Covers"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="HasProtectedSite"/>
     </Declaration>
     <Declaration>
@@ -116,6 +119,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="IsComprised"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="IsCoveredBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="IsHosted"/>
@@ -137,6 +143,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="ProtectedSiteSpeciesProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="Reaches"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="RegionProperty"/>
@@ -279,6 +288,13 @@
     <SubClassOf>
         <Class IRI="AdministrativeDivision"/>
         <Class IRI="SpatialObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AdministrativeDivision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="IsCoveredBy"/>
+            <Class IRI="TransportationPoint"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="AdministrativeDivision"/>
@@ -636,6 +652,20 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="TransportationPoint"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="Covers"/>
+            <Class IRI="AdministrativeDivision"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TransportationPoint"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="Reaches"/>
+            <Class IRI="ProtectedSite"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TransportationPoint"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="ContactInformationValue"/>
             <Datatype abbreviatedIRI="xsd:string"/>
@@ -695,6 +725,10 @@
         <ObjectProperty IRI="TransportationProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="Covers"/>
+        <ObjectProperty IRI="TransportationProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="HasProtectedSite"/>
         <ObjectProperty IRI="ProtectedSiteSpeciesProperty"/>
     </SubObjectPropertyOf>
@@ -712,6 +746,10 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="IsComprised"/>
+        <ObjectProperty IRI="AdministrativeDivisionProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="IsCoveredBy"/>
         <ObjectProperty IRI="AdministrativeDivisionProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -737,6 +775,10 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="ProtectedSiteProperty"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="Reaches"/>
+        <ObjectProperty IRI="TransportationProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="RegionProperty"/>
@@ -755,8 +797,16 @@
         <ObjectProperty IRI="IsCompetentOn"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="Covers"/>
+        <ObjectProperty IRI="IsCoveredBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="IsManagedBy"/>
         <ObjectProperty IRI="Manages"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="IsReachableBy"/>
+        <ObjectProperty IRI="Reaches"/>
     </InverseObjectProperties>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="Connected"/>
@@ -774,6 +824,10 @@
         <Class IRI="TransportationPoint"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="Covers"/>
+        <Class IRI="TransportationPoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="HasProtectedSite"/>
         <Class IRI="ProtectedSiteSpecies"/>
     </ObjectPropertyDomain>
@@ -791,6 +845,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsComprised"/>
+        <Class IRI="AdministrativeDivision"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="IsCoveredBy"/>
         <Class IRI="AdministrativeDivision"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -809,6 +867,10 @@
         <ObjectProperty IRI="Manages"/>
         <Class IRI="ManagementAuthority"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="Reaches"/>
+        <Class IRI="TransportationPoint"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="CompetenceUnder"/>
         <Class IRI="Region"/>
@@ -820,6 +882,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="Connected"/>
         <Class IRI="SpatialObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Covers"/>
+        <Class IRI="AdministrativeDivision"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="HasProtectedSite"/>
@@ -840,6 +906,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="IsComprised"/>
         <Class IRI="AdministrativeDivision"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="IsCoveredBy"/>
+        <Class IRI="TransportationPoint"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="IsHosted"/>
@@ -855,6 +925,10 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="Manages"/>
+        <Class IRI="ProtectedSite"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="Reaches"/>
         <Class IRI="ProtectedSite"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
@@ -1463,6 +1537,11 @@
         <Literal xml:lang="en">Country</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Covers</IRI>
+        <Literal xml:lang="en">Covers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>DDCoordinateValue</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
@@ -1621,6 +1700,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>IsComprised</IRI>
         <Literal xml:lang="en">IsComprised</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IsCoveredBy</IRI>
+        <Literal xml:lang="en">IsCoveredBy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1836,6 +1920,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Province</IRI>
         <Literal xml:lang="en">Province</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Reaches</IRI>
+        <Literal xml:lang="en">Reaches</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
