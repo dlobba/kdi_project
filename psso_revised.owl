@@ -2157,6 +2157,11 @@
         <IRI>Wheelchair</IRI>
         <Literal xml:lang="en">Wheelchair</Literal>
     </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>psso:abundance</IRI>
+        <Literal xml:lang="en">psso:abundance</Literal>
+    </AnnotationAssertion>
     <DatatypeDefinition>
         <Datatype IRI="psso:abundance"/>
         <DataOneOf>
