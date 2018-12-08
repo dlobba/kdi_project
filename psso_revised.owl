@@ -286,6 +286,18 @@
         <DataProperty IRI="Wheelchair"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="GeneralConcept"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="GeneralConceptID"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="synsetID"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="type"/>
+    </Declaration>
+    <Declaration>
         <Datatype IRI="psso:abundance"/>
     </Declaration>
     <SubClassOf>
@@ -1348,9 +1360,14 @@
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>AbundanceCategory</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">05124537</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>AbundanceCategory</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1358,9 +1375,14 @@
         <Literal xml:lang="en">AbundanceCategory</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Address</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08508037</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Address</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1368,9 +1390,14 @@
         <Literal xml:lang="en">Address</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>AdministrativeDivision</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08237635</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>AdministrativeDivision</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1378,7 +1405,7 @@
         <Literal xml:lang="en">AdministrativeDivision</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>AdministrativeDivisionCode</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1393,9 +1420,14 @@
         <Literal xml:lang="en">AdministrativeDivisionProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Aerodrome</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02695091</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Aerodrome</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1403,9 +1435,14 @@
         <Literal xml:lang="en">Aerodrome</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Airport</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02695091</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Airport</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1413,9 +1450,14 @@
         <Literal xml:lang="en">Airport</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>AreaCovered</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">05135784</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>AreaCovered</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1423,7 +1465,7 @@
         <Literal xml:lang="en">AreaCovered</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>BoatRentalService</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1433,7 +1475,7 @@
         <Literal xml:lang="en">BoatRentalService</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>BoatSharingService</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1443,9 +1485,14 @@
         <Literal xml:lang="en">BoatSharingService</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>BusStop</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08534954</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>BusStop</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1458,7 +1505,7 @@
         <Literal xml:lang="en">BusStopValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>BycicleRentalService</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1468,7 +1515,7 @@
         <Literal xml:lang="en">BicycleRentalService</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>CarRentalService</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1478,7 +1525,7 @@
         <Literal xml:lang="en">CarRentalService</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>CarSharingService</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1488,9 +1535,14 @@
         <Literal xml:lang="en">CarSharingService</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>City</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08558466</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>City</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1498,9 +1550,14 @@
         <Literal xml:lang="en">City</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>CompetenceUnder</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00514055</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>CompetenceUnder</IRI>
+        <Literal xml:lang="en">adjective</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1508,9 +1565,14 @@
         <Literal xml:lang="en">CompetenceUnder</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Comprises</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02639437</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Comprises</IRI>
+        <Literal xml:lang="en">verb</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1518,9 +1580,14 @@
         <Literal xml:lang="en">Comprises</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Connected</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00568364</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Connected</IRI>
+        <Literal xml:lang="en">adjective</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1533,9 +1600,14 @@
         <Literal xml:lang="en">ContactInformationValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>CoordinateValue</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06020279</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>CoordinateValue</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1543,9 +1615,14 @@
         <Literal xml:lang="en">CoordinateValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Country</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08562388</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Country</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1553,9 +1630,14 @@
         <Literal xml:lang="en">Country</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Covers</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">01916152</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Covers</IRI>
+        <Literal xml:lang="en">verb</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1563,7 +1645,7 @@
         <Literal xml:lang="en">Covers</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>DDCoordinateValue</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1573,9 +1655,14 @@
         <Literal xml:lang="en">DDCoordinateValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>DDLatitude</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08613087</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>DDLatitude</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1583,9 +1670,14 @@
         <Literal xml:lang="en">DDLatitude</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>DDLongitude</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08614224</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>DDLongitude</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1593,7 +1685,7 @@
         <Literal xml:lang="en">DDLongitude</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>DMSCoordinateValue</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1603,9 +1695,14 @@
         <Literal xml:lang="en">DMSCoordinateValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>DMSLatitude</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08613087</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>DMSLatitude</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1613,9 +1710,14 @@
         <Literal xml:lang="en">DMSLatitude</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>DMSLongitude</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08614224</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>DMSLongitude</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1623,9 +1725,14 @@
         <Literal xml:lang="en">DMSLongitude</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Designation</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06350278</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Designation</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1633,7 +1740,7 @@
         <Literal xml:lang="en">Designation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Email</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1643,7 +1750,7 @@
         <Literal xml:lang="en">Email</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Fax</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1653,9 +1760,14 @@
         <Literal xml:lang="en">Fax</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Ferryport</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08656633</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Ferryport</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1663,7 +1775,7 @@
         <Literal xml:lang="en">Ferryport</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>HasProtectedSite</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1673,7 +1785,7 @@
         <Literal xml:lang="en">HasProtectedSite</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>HasSpecies</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1683,9 +1795,14 @@
         <Literal xml:lang="en">HasSpecies</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Hosts</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02464596</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Hosts</IRI>
+        <Literal xml:lang="en">verb</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1693,9 +1810,14 @@
         <Literal xml:lang="en">Hosts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>IdentificationValue</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>IdentificationValue</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1703,9 +1825,14 @@
         <Literal xml:lang="en">IdentificationValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>IsCompetentOn</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00514055</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>IsCompetentOn</IRI>
+        <Literal xml:lang="en">adjective</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1713,9 +1840,14 @@
         <Literal xml:lang="en">IsCompetentOn</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>IsComprised</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02639437</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>IsComprised</IRI>
+        <Literal xml:lang="en">verb</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1723,9 +1855,14 @@
         <Literal xml:lang="en">IsComprised</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>IsCoveredBy</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">01916152</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>IsCoveredBy</IRI>
+        <Literal xml:lang="en">verb</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1733,9 +1870,14 @@
         <Literal xml:lang="en">IsCoveredBy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>IsHosted</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02464596</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>IsHosted</IRI>
+        <Literal xml:lang="en">verb</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1743,9 +1885,14 @@
         <Literal xml:lang="en">IsHosted</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>IsManagedBy</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02447914</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>IsManagedBy</IRI>
+        <Literal xml:lang="en">verb</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1753,9 +1900,14 @@
         <Literal xml:lang="en">IsManagedBy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>IsReachableBy</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00019169</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>IsReachableBy</IRI>
+        <Literal xml:lang="en">adjective</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1763,9 +1915,14 @@
         <Literal xml:lang="en">IsReachableBy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>LocalName</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06355208</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>LocalName</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1778,9 +1935,14 @@
         <Literal xml:lang="en">LocalName</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>ManagementAuthority</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08397896</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>ManagementAuthority</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1793,9 +1955,14 @@
         <Literal xml:lang="en">ManagementAuthorityProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Manages</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02447914</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Manages</IRI>
+        <Literal xml:lang="en">verb</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1803,9 +1970,14 @@
         <Literal xml:lang="en">Manages</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>MarineAreaCovered</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">05135784</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>MarineAreaCovered</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1813,7 +1985,7 @@
         <Literal xml:lang="en">MarineAreaCovered</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>NUTS2Code</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1823,7 +1995,7 @@
         <Literal xml:lang="en">NUTS2Code</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>NUTS3Code</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1833,9 +2005,14 @@
         <Literal xml:lang="en">NUTS3Code</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Name</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06344646</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Name</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1843,7 +2020,7 @@
         <Literal xml:lang="en">Name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Natura2000PSID</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1853,7 +2030,7 @@
         <Literal xml:lang="en">Natura2000PSID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Natura2000SpeciesID</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1863,12 +2040,22 @@
         <Literal xml:lang="en">Natura2000SpeciesID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>OSMID</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="GeneralConcept"/>
+        <IRI>OpeningHour</IRI>
+        <Literal xml:lang="en">hour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="GeneralConceptID"/>
+        <IRI>OpeningHour</IRI>
+        <Literal xml:lang="en">15253174</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>OpeningHour</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1878,9 +2065,14 @@
         <Literal xml:lang="en">OpeningHour</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Operator</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10398479</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Operator</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1888,7 +2080,17 @@
         <Literal xml:lang="en">Operator</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="GeneralConcept"/>
+        <IRI>PSType</IRI>
+        <Literal xml:lang="en">type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="GeneralConceptID"/>
+        <IRI>PSType</IRI>
+        <Literal xml:lang="en">05848697</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>PSType</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1903,9 +2105,14 @@
         <Literal xml:lang="en">PhysicalEntity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>ProtectedSite</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">14537641</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>ProtectedSite</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1918,7 +2125,7 @@
         <Literal xml:lang="en">ProtectedSiteProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>ProtectedSiteSpecies</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1938,7 +2145,7 @@
         <Literal xml:lang="en">ProtectedSiteValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Province</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -1948,9 +2155,19 @@
         <Literal xml:lang="en">Province</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ProvinceProperty</IRI>
+        <Literal xml:lang="en">ProvinceProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Reaches</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00019169</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Reaches</IRI>
+        <Literal xml:lang="en">adjective</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1958,9 +2175,14 @@
         <Literal xml:lang="en">Reaches</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Region</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08671935</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Region</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1978,9 +2200,14 @@
         <Literal xml:lang="en">RelationalEntity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>RentalService</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02903416</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>RentalService</IRI>
+        <Literal xml:lang="en">adjective</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1993,9 +2220,14 @@
         <Literal xml:lang="en">RentalServiceValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>RouteLine</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08633886</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>RouteLine</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2003,9 +2235,14 @@
         <Literal xml:lang="en">RouteLine</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>SharingService</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00543409</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>SharingService</IRI>
+        <Literal xml:lang="en">adjective</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2013,9 +2250,14 @@
         <Literal xml:lang="en">SharingService</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Shelter</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">04198986</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Shelter</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2033,9 +2275,14 @@
         <Literal xml:lang="en">SpatialObject</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Species</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08127339</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Species</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2053,9 +2300,14 @@
         <Literal xml:lang="en">SpeciesValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Status</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13943868</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Status</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2063,7 +2315,7 @@
         <Literal xml:lang="en">Status</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>StatusYear</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -2073,9 +2325,14 @@
         <Literal xml:lang="en">StatusYear</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Supergroup</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08124465</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Supergroup</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2083,9 +2340,14 @@
         <Literal xml:lang="en">Supergroup</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Telephone</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06437781</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Telephone</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2093,9 +2355,14 @@
         <Literal xml:lang="en">Telephone</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>TrainStation</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">04056210</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>TrainStation</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2103,9 +2370,14 @@
         <Literal xml:lang="en">TrainStation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>TransportationPoint</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">04480667</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>TransportationPoint</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2113,7 +2385,7 @@
         <Literal xml:lang="en">TransportationPoint</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>TransportationPointCode</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -2128,7 +2400,7 @@
         <Literal xml:lang="en">TransportationProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>WDPAID</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
@@ -2138,9 +2410,14 @@
         <Literal xml:lang="en">WDPAID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Website</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06370600</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="type"/>
+        <IRI>Website</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2148,7 +2425,7 @@
         <Literal xml:lang="en">Website</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>Wheelchair</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
