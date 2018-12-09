@@ -306,13 +306,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="AdministrativeDivision"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="IsCoveredBy"/>
-            <Class IRI="TransportationPoint"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="AdministrativeDivision"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="AdministrativeDivisionCode"/>
             <Datatype abbreviatedIRI="xsd:string"/>
