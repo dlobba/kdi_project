@@ -3,19 +3,22 @@ Resources and code used for the KDI course project.
 
 In the root folder it is possible to find:
 
-* filtering_tag, filtering_tag2: the tags used to filter the .osm files (filtering_tag2 has not been used)
-* osm_scripts, set of commands and generalised info about osm file processing
-  both with `osm-tools` and `osmium`, in addition to useful code snippets
-* the data folder containing the data used by scripts to create individual in protege
+* the data folder containing the data used by scripts to create individuals in protege
 * the `scripts` folder, containing the R script files used to process data contained
   in the `data` folder.
 * the `cellfie_rules.json` file contains the transformation rules cellfie
   has to perform in order to import individuals in protege.
+* the `graphs` folder contains graphml files created using yED for both
+  the informal and formal model used for the task.
+* the folder `data_processing_resources` contains help files and bash scripts used
+  to collect data for the project, including osm_scripts,
+  set of commands and generalised info about osm file processing
+  both with `osm-tools` and `osmium`, in addition to useful code snippets
 * pyosm, a python library used to build a SQLite db out of an .osm file.
   Which we though to use to obtain tags out of the various OSM entities, in
   scenarios where `osmium` and `osm-tools` **seem not** to do the job.
 
-	PyOSM has been deprecated in favour of ther ways to process OSM data.
+  PyOSM has been deprecated in favour of ther ways to process OSM data.
 
 
 ____
