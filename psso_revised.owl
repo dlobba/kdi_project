@@ -562,6 +562,13 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Province"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="IsCoveredBy"/>
+            <Class IRI="TransportationPoint"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Province"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="NUTS3Code"/>
             <Datatype abbreviatedIRI="xsd:string"/>
@@ -662,7 +669,7 @@
         <Class IRI="TransportationPoint"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="Covers"/>
-            <Class IRI="AdministrativeDivision"/>
+            <Class IRI="Province"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -858,7 +865,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsCoveredBy"/>
-        <Class IRI="AdministrativeDivision"/>
+        <Class IRI="Province"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="IsHosted"/>
@@ -894,7 +901,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="Covers"/>
-        <Class IRI="AdministrativeDivision"/>
+        <Class IRI="Province"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="HasProtectedSite"/>
