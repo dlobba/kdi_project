@@ -2190,6 +2190,11 @@
         <Literal xml:lang="en">05848697</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>PSType</IRI>
+        <Literal xml:lang="en">noun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
         <IRI>PSType</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
