@@ -12,6 +12,22 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="authors"/>
+        <Literal xml:lang="en">Diego Lobba &amp; Nicolò Alessandro Girardini</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Compliant with CSK ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">This ontology aims at integrating protected sites in Italy coming from Natura2000 and WDPA datasets, following the INSPIRE european directive. It also integrates transportation points, gathered from OSM dataset, so it can be used to provide a useful service for tourism pourposes</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">10/12/2018 Version</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="AdministrativeDivision"/>
     </Declaration>
@@ -284,6 +300,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="Wheelchair"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="authors"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="generalConcept"/>
@@ -2188,6 +2207,11 @@
         <AnnotationProperty IRI="parentID"/>
         <IRI>PSType</IRI>
         <Literal xml:lang="en">05848697</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>PSType</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
