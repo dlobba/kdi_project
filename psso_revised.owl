@@ -289,7 +289,7 @@
         <AnnotationProperty IRI="generalConcept"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="posTag"/>
@@ -1400,7 +1400,7 @@
         <Literal xml:lang="en">Codes identifying areas</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>AdministrativeDivisionCode</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
     </AnnotationAssertion>
@@ -1460,7 +1460,7 @@
         <Literal xml:lang="en">Boat rental service</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>BoatRentalService</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13269292</Literal>
     </AnnotationAssertion>
@@ -1485,7 +1485,7 @@
         <Literal xml:lang="en">Boat sharing service</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>BoatSharingService</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13866117</Literal>
     </AnnotationAssertion>
@@ -1525,7 +1525,7 @@
         <Literal xml:lang="en">Bycicles rental service</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>BycicleRentalService</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13269292</Literal>
     </AnnotationAssertion>
@@ -1550,7 +1550,7 @@
         <Literal xml:lang="en">Car rental service</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>CarRentalService</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13269292</Literal>
     </AnnotationAssertion>
@@ -1575,7 +1575,7 @@
         <Literal xml:lang="en">Car sharing service</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>CarSharingService</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13866117</Literal>
     </AnnotationAssertion>
@@ -1680,7 +1680,7 @@
         <Literal xml:lang="en">Coordinate values in decimal degrees</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>DDCoordinateValue</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06020279</Literal>
     </AnnotationAssertion>
@@ -1725,7 +1725,7 @@
         <Literal xml:lang="en">Coordinate values in degrees, minutes, seconds</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>DMSCoordinateValue</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06020279</Literal>
     </AnnotationAssertion>
@@ -1780,7 +1780,7 @@
         <Literal xml:lang="en">The email contact, not the system itself</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>Email</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06271913</Literal>
     </AnnotationAssertion>
@@ -1805,7 +1805,7 @@
         <Literal xml:lang="en">The fax number, not the tool itself</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>Fax</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06271913</Literal>
     </AnnotationAssertion>
@@ -2005,7 +2005,7 @@
         <Literal xml:lang="en">European Region identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>NUTS2Code</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
     </AnnotationAssertion>
@@ -2030,7 +2030,7 @@
         <Literal xml:lang="en">European Province identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>NUTS3Code</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
     </AnnotationAssertion>
@@ -2065,7 +2065,7 @@
         <Literal xml:lang="en">Protected site&apos;s ID in Natura2000 dataset</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>Natura2000PSID</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
     </AnnotationAssertion>
@@ -2090,7 +2090,7 @@
         <Literal xml:lang="en">ID given to the species in Natura2000 dataset</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>Natura2000SpeciesID</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
     </AnnotationAssertion>
@@ -2115,7 +2115,7 @@
         <Literal xml:lang="en">Open Street Map ID for nodes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>OSMID</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
     </AnnotationAssertion>
@@ -2140,7 +2140,7 @@
         <Literal xml:lang="en">Opening hour of a transportation service</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>OpeningHour</IRI>
         <Literal xml:lang="en">15253174</Literal>
     </AnnotationAssertion>
@@ -2185,7 +2185,7 @@
         <Literal xml:lang="en">Protected site&apos;s type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>PSType</IRI>
         <Literal xml:lang="en">05848697</Literal>
     </AnnotationAssertion>
@@ -2235,7 +2235,7 @@
         <Literal xml:lang="en">Administrative division tipycal of Italy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>Province</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08237635</Literal>
     </AnnotationAssertion>
@@ -2290,7 +2290,7 @@
         <Literal xml:lang="en">Relation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>RelationalEntity</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00032220</Literal>
     </AnnotationAssertion>
@@ -2390,7 +2390,7 @@
         <Literal xml:lang="en">Year in which the protected site gained its status</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>StatusYear</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15228587</Literal>
     </AnnotationAssertion>
@@ -2455,7 +2455,7 @@
         <Literal xml:lang="en">Identification code for transportation points</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>TransportationPointCode</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
     </AnnotationAssertion>
@@ -2490,7 +2490,7 @@
         <Literal xml:lang="en">Protected site&apos;s ID in WDPA dataset</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>WDPAID</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
     </AnnotationAssertion>
@@ -2525,7 +2525,7 @@
         <Literal xml:lang="en">Availability of the service for people with motor disfunctions</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="generalConceptID"/>
+        <AnnotationProperty IRI="parentID"/>
         <IRI>Wheelchair</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">04583288</Literal>
     </AnnotationAssertion>
@@ -2551,7 +2551,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>generalConceptID</IRI>
+        <IRI>parentID</IRI>
         <Literal xml:lang="en">ID of the Wordnet synset mapping the general concept of the word. It could be considered the parent of the new synset</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
