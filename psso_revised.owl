@@ -49,10 +49,16 @@
         <Class IRI="Ferryport"/>
     </Declaration>
     <Declaration>
+        <Class IRI="LivingBeing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Location"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ManagementAuthority"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PhysicalEntity"/>
+        <Class IRI="Organization"/>
     </Declaration>
     <Declaration>
         <Class IRI="ProtectedSite"/>
@@ -74,12 +80,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="SharingService"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="SocialEntity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="SpatialObject"/>
     </Declaration>
     <Declaration>
         <Class IRI="Species"/>
@@ -286,23 +286,23 @@
         <DataProperty IRI="Wheelchair"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="GeneralConcept"/>
+        <AnnotationProperty IRI="generalConcept"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="GeneralConceptID"/>
+        <AnnotationProperty IRI="generalConceptID"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="posTag"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="synsetID"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="type"/>
     </Declaration>
     <Declaration>
         <Datatype IRI="psso:abundance"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="AdministrativeDivision"/>
-        <Class IRI="SpatialObject"/>
+        <Class IRI="Location"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="AdministrativeDivision"/>
@@ -391,8 +391,15 @@
         <Class IRI="TransportationPoint"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Location"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="Name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="ManagementAuthority"/>
-        <Class IRI="SocialEntity"/>
+        <Class IRI="Organization"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ManagementAuthority"/>
@@ -417,7 +424,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ProtectedSite"/>
-        <Class IRI="SpatialObject"/>
+        <Class IRI="Location"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ProtectedSite"/>
@@ -629,19 +636,8 @@
         <Class IRI="TransportationPoint"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="SpatialObject"/>
-        <Class IRI="PhysicalEntity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="SpatialObject"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="Name"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Species"/>
-        <Class IRI="PhysicalEntity"/>
+        <Class IRI="LivingBeing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Species"/>
@@ -677,13 +673,13 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="TransportationPoint"/>
-        <Class IRI="SpatialObject"/>
+        <Class IRI="Location"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="TransportationPoint"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="Connected"/>
-            <Class IRI="SpatialObject"/>
+            <Class IRI="Location"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -739,10 +735,6 @@
         <Class IRI="AdministrativeDivision"/>
         <Class IRI="ProtectedSite"/>
         <Class IRI="TransportationPoint"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="SpatialObject"/>
-        <Class IRI="Species"/>
     </DisjointClasses>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="AdministrativeDivisionProperty"/>
@@ -918,7 +910,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="Connected"/>
-        <Class IRI="SpatialObject"/>
+        <Class IRI="Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="Covers"/>
@@ -1151,14 +1143,6 @@
     <DataPropertyDomain>
         <DataProperty IRI="AreaCovered"/>
         <Class IRI="ProtectedSite"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="DDCoordinateValue"/>
-        <Class IRI="SpatialObject"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="DMSCoordinateValue"/>
-        <Class IRI="SpatialObject"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="Designation"/>
@@ -1386,11 +1370,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">05124537</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>AbundanceCategory</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>AbundanceCategory</IRI>
         <Literal xml:lang="en">AbundanceCategory</Literal>
@@ -1399,11 +1378,6 @@
         <AnnotationProperty IRI="synsetID"/>
         <IRI>Address</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08508037</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Address</IRI>
-        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1416,14 +1390,24 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08237635</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>AdministrativeDivision</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>AdministrativeDivision</IRI>
         <Literal xml:lang="en">AdministrativeDivision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>AdministrativeDivisionCode</IRI>
+        <Literal xml:lang="en">Codes identifying areas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>AdministrativeDivisionCode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>AdministrativeDivisionCode</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
@@ -1446,11 +1430,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02695091</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Aerodrome</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Aerodrome</IRI>
         <Literal xml:lang="en">Aerodrome</Literal>
@@ -1459,11 +1438,6 @@
         <AnnotationProperty IRI="synsetID"/>
         <IRI>Airport</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02695091</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Airport</IRI>
-        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1476,14 +1450,24 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">05135784</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>AreaCovered</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>AreaCovered</IRI>
         <Literal xml:lang="en">AreaCovered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>BoatRentalService</IRI>
+        <Literal xml:lang="en">Boat rental service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>BoatRentalService</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13269292</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>BoatRentalService</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
@@ -1494,6 +1478,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>BoatRentalService</IRI>
         <Literal xml:lang="en">BoatRentalService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>BoatSharingService</IRI>
+        <Literal xml:lang="en">Boat sharing service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>BoatSharingService</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13866117</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>BoatSharingService</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
@@ -1511,11 +1510,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08534954</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>BusStop</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>BusStop</IRI>
         <Literal xml:lang="en">BusStop</Literal>
@@ -1524,6 +1518,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>BusStopValue</IRI>
         <Literal xml:lang="en">BusStopValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>BycicleRentalService</IRI>
+        <Literal xml:lang="en">Bycicles rental service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>BycicleRentalService</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13269292</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>BycicleRentalService</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
@@ -1536,6 +1545,21 @@
         <Literal xml:lang="en">BicycleRentalService</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>CarRentalService</IRI>
+        <Literal xml:lang="en">Car rental service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>CarRentalService</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13269292</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>CarRentalService</IRI>
+        <Literal xml:lang="en">noun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
         <IRI>CarRentalService</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
@@ -1544,6 +1568,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>CarRentalService</IRI>
         <Literal xml:lang="en">CarRentalService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>CarSharingService</IRI>
+        <Literal xml:lang="en">Car sharing service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>CarSharingService</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13866117</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>CarSharingService</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
@@ -1561,11 +1600,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08558466</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>City</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>City</IRI>
         <Literal xml:lang="en">City</Literal>
@@ -1574,11 +1608,6 @@
         <AnnotationProperty IRI="synsetID"/>
         <IRI>CompetenceUnder</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00514055</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>CompetenceUnder</IRI>
-        <Literal xml:lang="en">adjective</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1591,11 +1620,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02639437</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Comprises</IRI>
-        <Literal xml:lang="en">verb</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Comprises</IRI>
         <Literal xml:lang="en">Comprises</Literal>
@@ -1606,14 +1630,14 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00568364</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Connected</IRI>
-        <Literal xml:lang="en">adjective</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Connected</IRI>
         <Literal xml:lang="en">Connected</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="synsetID"/>
+        <IRI>ContactInformationValue</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06271913</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1626,11 +1650,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06020279</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>CoordinateValue</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>CoordinateValue</IRI>
         <Literal xml:lang="en">CoordinateValue</Literal>
@@ -1639,11 +1658,6 @@
         <AnnotationProperty IRI="synsetID"/>
         <IRI>Country</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08562388</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Country</IRI>
-        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1656,14 +1670,24 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">01916152</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Covers</IRI>
-        <Literal xml:lang="en">verb</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Covers</IRI>
         <Literal xml:lang="en">Covers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>DDCoordinateValue</IRI>
+        <Literal xml:lang="en">Coordinate values in decimal degrees</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>DDCoordinateValue</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06020279</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>DDCoordinateValue</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
@@ -1681,11 +1705,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08613087</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>DDLatitude</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>DDLatitude</IRI>
         <Literal xml:lang="en">DDLatitude</Literal>
@@ -1696,14 +1715,24 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08614224</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>DDLongitude</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>DDLongitude</IRI>
         <Literal xml:lang="en">DDLongitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>DMSCoordinateValue</IRI>
+        <Literal xml:lang="en">Coordinate values in degrees, minutes, seconds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>DMSCoordinateValue</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06020279</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>DMSCoordinateValue</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
@@ -1721,11 +1750,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08613087</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>DMSLatitude</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>DMSLatitude</IRI>
         <Literal xml:lang="en">DMSLatitude</Literal>
@@ -1734,11 +1758,6 @@
         <AnnotationProperty IRI="synsetID"/>
         <IRI>DMSLongitude</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08614224</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>DMSLongitude</IRI>
-        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1751,14 +1770,24 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06350278</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Designation</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Designation</IRI>
         <Literal xml:lang="en">Designation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>Email</IRI>
+        <Literal xml:lang="en">The email contact, not the system itself</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>Email</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06271913</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>Email</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
@@ -1769,6 +1798,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Email</IRI>
         <Literal xml:lang="en">Email</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>Fax</IRI>
+        <Literal xml:lang="en">The fax number, not the tool itself</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>Fax</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06271913</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>Fax</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
@@ -1784,11 +1828,6 @@
         <AnnotationProperty IRI="synsetID"/>
         <IRI>Ferryport</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08656633</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Ferryport</IRI>
-        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1821,11 +1860,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02464596</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Hosts</IRI>
-        <Literal xml:lang="en">verb</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Hosts</IRI>
         <Literal xml:lang="en">Hosts</Literal>
@@ -1834,11 +1868,6 @@
         <AnnotationProperty IRI="synsetID"/>
         <IRI>IdentificationValue</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>IdentificationValue</IRI>
-        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1851,11 +1880,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00514055</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>IsCompetentOn</IRI>
-        <Literal xml:lang="en">adjective</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>IsCompetentOn</IRI>
         <Literal xml:lang="en">IsCompetentOn</Literal>
@@ -1864,11 +1888,6 @@
         <AnnotationProperty IRI="synsetID"/>
         <IRI>IsComprised</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02639437</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>IsComprised</IRI>
-        <Literal xml:lang="en">verb</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1881,11 +1900,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">01916152</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>IsCoveredBy</IRI>
-        <Literal xml:lang="en">verb</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>IsCoveredBy</IRI>
         <Literal xml:lang="en">IsCoveredBy</Literal>
@@ -1894,11 +1908,6 @@
         <AnnotationProperty IRI="synsetID"/>
         <IRI>IsHosted</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02464596</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>IsHosted</IRI>
-        <Literal xml:lang="en">verb</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1911,11 +1920,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02447914</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>IsManagedBy</IRI>
-        <Literal xml:lang="en">verb</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>IsManagedBy</IRI>
         <Literal xml:lang="en">IsManagedBy</Literal>
@@ -1926,29 +1930,24 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00019169</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>IsReachableBy</IRI>
-        <Literal xml:lang="en">adjective</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>IsReachableBy</IRI>
         <Literal xml:lang="en">IsReachableBy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
+        <IRI>LivingBeing</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00004475</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>LivingBeing</IRI>
+        <Literal xml:lang="en">LivingBeing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>LocalName</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06355208</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>LocalName</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>LocalName</IRI>
-        <Literal xml:lang="en">Wordnet: Toponym</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1957,13 +1956,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
-        <IRI>ManagementAuthority</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08397896</Literal>
+        <IRI>Location</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00027365</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Location</IRI>
+        <Literal xml:lang="en">Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="synsetID"/>
         <IRI>ManagementAuthority</IRI>
-        <Literal xml:lang="en">noun</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08397896</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1981,11 +1985,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02447914</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Manages</IRI>
-        <Literal xml:lang="en">verb</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Manages</IRI>
         <Literal xml:lang="en">Manages</Literal>
@@ -1996,14 +1995,24 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">05135784</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>MarineAreaCovered</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>MarineAreaCovered</IRI>
         <Literal xml:lang="en">MarineAreaCovered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>NUTS2Code</IRI>
+        <Literal xml:lang="en">European Region identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>NUTS2Code</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>NUTS2Code</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
@@ -2014,6 +2023,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>NUTS2Code</IRI>
         <Literal xml:lang="en">NUTS2Code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>NUTS3Code</IRI>
+        <Literal xml:lang="en">European Province identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>NUTS3Code</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>NUTS3Code</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
@@ -2031,14 +2055,24 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06344646</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Name</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Name</IRI>
         <Literal xml:lang="en">Name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>Natura2000PSID</IRI>
+        <Literal xml:lang="en">Protected site&apos;s ID in Natura2000 dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>Natura2000PSID</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>Natura2000PSID</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
@@ -2051,6 +2085,21 @@
         <Literal xml:lang="en">Natura2000PSID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>Natura2000SpeciesID</IRI>
+        <Literal xml:lang="en">ID given to the species in Natura2000 dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>Natura2000SpeciesID</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>Natura2000SpeciesID</IRI>
+        <Literal xml:lang="en">noun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
         <IRI>Natura2000SpeciesID</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
@@ -2061,17 +2110,37 @@
         <Literal xml:lang="en">Natura2000SpeciesID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>OSMID</IRI>
+        <Literal xml:lang="en">Open Street Map ID for nodes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>OSMID</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>OSMID</IRI>
+        <Literal xml:lang="en">noun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
         <IRI>OSMID</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="GeneralConcept"/>
-        <IRI>OpeningHour</IRI>
-        <Literal xml:lang="en">hour</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OSMID</IRI>
+        <Literal xml:lang="en">OSMID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="GeneralConceptID"/>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>OpeningHour</IRI>
+        <Literal xml:lang="en">Opening hour of a transportation service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
         <IRI>OpeningHour</IRI>
         <Literal xml:lang="en">15253174</Literal>
     </AnnotationAssertion>
@@ -2091,22 +2160,32 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10398479</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Operator</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Operator</IRI>
         <Literal xml:lang="en">Operator</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="GeneralConcept"/>
-        <IRI>PSType</IRI>
-        <Literal xml:lang="en">type</Literal>
+        <AnnotationProperty IRI="synsetID"/>
+        <IRI>Organization</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08181484</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="GeneralConceptID"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Organization</IRI>
+        <Literal xml:lang="en">An organization is a unit constituted by members with common goals and formal rules. Organizations include corporations, companies, agencies, political parties and other groups defined by an established organizational structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Organization</IRI>
+        <Literal xml:lang="en">Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>PSType</IRI>
+        <Literal xml:lang="en">Protected site&apos;s type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
         <IRI>PSType</IRI>
         <Literal xml:lang="en">05848697</Literal>
     </AnnotationAssertion>
@@ -2121,19 +2200,9 @@
         <Literal xml:lang="en">PSType</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>PhysicalEntity</IRI>
-        <Literal xml:lang="en">PhysicalEntity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
         <IRI>ProtectedSite</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">14537641</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>ProtectedSite</IRI>
-        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2144,11 +2213,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>ProtectedSiteProperty</IRI>
         <Literal xml:lang="en">ProtectedSiteProperty</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="synsetID"/>
-        <IRI>ProtectedSiteSpecies</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2164,6 +2228,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>ProtectedSiteValue</IRI>
         <Literal xml:lang="en">ProtectedSiteValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>Province</IRI>
+        <Literal xml:lang="en">Administrative division tipycal of Italy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>Province</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08237635</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>Province</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
@@ -2186,11 +2265,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00019169</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Reaches</IRI>
-        <Literal xml:lang="en">adjective</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Reaches</IRI>
         <Literal xml:lang="en">Reaches</Literal>
@@ -2199,11 +2273,6 @@
         <AnnotationProperty IRI="synsetID"/>
         <IRI>Region</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08671935</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Region</IRI>
-        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2216,6 +2285,26 @@
         <Literal xml:lang="en">RegionProperty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>RelationalEntity</IRI>
+        <Literal xml:lang="en">Relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>RelationalEntity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00032220</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>RelationalEntity</IRI>
+        <Literal xml:lang="en">noun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="synsetID"/>
+        <IRI>RelationalEntity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>RelationalEntity</IRI>
         <Literal xml:lang="en">RelationalEntity</Literal>
@@ -2223,12 +2312,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
         <IRI>RentalService</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">02903416</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>RentalService</IRI>
-        <Literal xml:lang="en">adjective</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13269292</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2246,11 +2330,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08633886</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>RouteLine</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>RouteLine</IRI>
         <Literal xml:lang="en">RouteLine</Literal>
@@ -2258,12 +2337,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
         <IRI>SharingService</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">00543409</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>SharingService</IRI>
-        <Literal xml:lang="en">adjective</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13866117</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2276,34 +2350,14 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">04198986</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Shelter</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Shelter</IRI>
         <Literal xml:lang="en">Shelter</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>SocialEntity</IRI>
-        <Literal xml:lang="en">SocialEntity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>SpatialObject</IRI>
-        <Literal xml:lang="en">SpatialObject</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
         <IRI>Species</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08127339</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Species</IRI>
-        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2326,14 +2380,24 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13943868</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Status</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Status</IRI>
         <Literal xml:lang="en">Status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>StatusYear</IRI>
+        <Literal xml:lang="en">Year in which the protected site gained its status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>StatusYear</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15228587</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>StatusYear</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
@@ -2351,11 +2415,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">08124465</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Supergroup</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Supergroup</IRI>
         <Literal xml:lang="en">Supergroup</Literal>
@@ -2364,11 +2423,6 @@
         <AnnotationProperty IRI="synsetID"/>
         <IRI>Telephone</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06437781</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Telephone</IRI>
-        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2381,11 +2435,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">04056210</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>TrainStation</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>TrainStation</IRI>
         <Literal xml:lang="en">TrainStation</Literal>
@@ -2396,19 +2445,34 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">04480667</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>TransportationPoint</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>TransportationPoint</IRI>
         <Literal xml:lang="en">TransportationPoint</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>TransportationPointCode</IRI>
+        <Literal xml:lang="en">Identification code for transportation points</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>TransportationPointCode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>TransportationPointCode</IRI>
+        <Literal xml:lang="en">noun</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
         <IRI>TransportationPointCode</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">-1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TransportationPointCode</IRI>
+        <Literal xml:lang="en">TransportationPointCode</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2419,6 +2483,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>TransportationProperty</IRI>
         <Literal xml:lang="en">TransportationProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>WDPAID</IRI>
+        <Literal xml:lang="en">Protected site&apos;s ID in WDPA dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>WDPAID</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">07285306</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>WDPAID</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
@@ -2436,14 +2515,24 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">06370600</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="type"/>
-        <IRI>Website</IRI>
-        <Literal xml:lang="en">noun</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Website</IRI>
         <Literal xml:lang="en">Website</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConcept"/>
+        <IRI>Wheelchair</IRI>
+        <Literal xml:lang="en">Availability of the service for people with motor disfunctions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="generalConceptID"/>
+        <IRI>Wheelchair</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">04583288</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="posTag"/>
+        <IRI>Wheelchair</IRI>
+        <Literal xml:lang="en">noun</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
@@ -2454,6 +2543,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Wheelchair</IRI>
         <Literal xml:lang="en">Wheelchair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>generalConcept</IRI>
+        <Literal xml:lang="en">Description of the concept if no matching synset is found in Wordnet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>generalConceptID</IRI>
+        <Literal xml:lang="en">ID of the Wordnet synset mapping the general concept of the word. It could be considered the parent of the new synset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>posTag</IRI>
+        <Literal xml:lang="en">POS tagging of the word if not already in a Wordnet synset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>synsetID</IRI>
+        <Literal xml:lang="en">ID of the Wordnet synset related to the word (-1 if no valid synset is found)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
