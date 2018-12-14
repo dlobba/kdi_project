@@ -2226,7 +2226,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="synsetID"/>
         <IRI>ProtectedSite</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">14537641</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8632724</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
