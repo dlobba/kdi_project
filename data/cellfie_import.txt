@@ -108,6 +108,7 @@ Individual: @'transports'!A*
 Annotations: rdfs:label @'transports'!B*(xml:lang="en")
 Types: @'transports'!R*
 Facts:
+    Name @'transports'!B*(xsd:string),
     OSMID @'transports'!A*(xsd:string),
     DDLongitude @'transports'!J*(xsd:decimal),
     DDLatitude  @'transports'!I*(xsd:decimal),
